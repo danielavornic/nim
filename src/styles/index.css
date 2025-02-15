@@ -2,6 +2,8 @@
 @import "./fonts.css";
 
 @plugin "tailwindcss-animate";
+@plugin "tailwind-scrollbar";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -99,12 +101,14 @@
 @layer base {
   html {
     font-family: var(--default-font-family);
+    @apply scrollbar scrollbar-thumb-foreground scrollbar-track-background;
   }
 
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground ;
   }
 }
+

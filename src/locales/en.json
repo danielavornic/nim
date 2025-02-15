@@ -3,5 +3,11 @@
     "home": "Home",
     "rules": "Rules",
     "partners": "Partners"
+  },
+  "meta": {
+    "home": {
+      "title": "Născut în Moldova Festival",
+      "description": "Născut în Moldova is Our Music Festival. Its purpose is to inspire people to love Moldova. Regardless of ethnicity, language, religion, gender or age, our people are united by a sense of home and common formation."
+    }
   }
 }

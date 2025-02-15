@@ -6,6 +6,8 @@ import ro from "./locales/ro.json";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 
+export const languages = ["en", "ro", "ru"] as const;
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -15,7 +17,7 @@ i18n
       en: { translation: en },
       ru: { translation: ru }
     },
-    supportedLngs: ["en", "ro", "ru"],
+    supportedLngs: languages,
     fallbackLng: "ro",
     interpolation: {
       escapeValue: false

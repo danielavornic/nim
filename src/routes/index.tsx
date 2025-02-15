@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import RootLayout from "../layouts/root-layout";
-import HomePage from "../pages/home-page";
+import HomePage from "../pages/home/home";
 
 const languages = ["en", "ro", "ru"];
 

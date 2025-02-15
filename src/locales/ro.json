@@ -3,5 +3,11 @@
     "home": "Acasă",
     "rules": "Regulament",
     "partners": "Parteneri"
+  },
+  "meta": {
+    "home": {
+      "title": "Născut în Moldova Festival",
+      "description": "Născut în Moldova este Festivalul Muzicii Noastre. Scopul acestuia este să inspire oamenii să iubească Moldova. Indiferent de etnie, limbă, confesiune, gen sau vârstă, pe oamenii noștri îi unește o simțire a casei și o formare comună."
+    }
   }
 }
