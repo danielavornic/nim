@@ -1,7 +1,9 @@
 {
   "nav": {
     "home": "Acasă",
-    "rules": "Regulament",
+    "tickets": "Bilete",
+    "rules": "Regulamentul",
+    "faq": "FAQ",
     "partners": "Parteneri"
   },
   "meta": {

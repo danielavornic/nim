@@ -2,7 +2,9 @@
   "nav": {
     "home": "Home",
     "rules": "Rules",
-    "partners": "Partners"
+    "partners": "Partners",
+    "tickets": "Tickets",
+    "faq": "FAQ"
   },
   "meta": {
     "home": {

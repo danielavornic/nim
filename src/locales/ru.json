@@ -1,8 +1,10 @@
 {
   "nav": {
     "home": "Главная",
-    "rules": "Правила",
-    "partners": "Партнеры"
+    "rules": "Регламент",
+    "partners": "Партнеры",
+    "tickets": "Билеты",
+    "faq": "FAQ"
   },
   "meta": {
     "home": {

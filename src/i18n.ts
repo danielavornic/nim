@@ -6,7 +6,7 @@ import ro from "./locales/ro.json";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 
-export const languages = ["en", "ro", "ru"] as const;
+export const languages = ["ro", "en", "ru"] as const;
 
 i18n
   .use(LanguageDetector)
