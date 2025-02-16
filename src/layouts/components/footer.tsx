@@ -1,10 +1,9 @@
-import { cn } from "@/lib/utils";
-import { NAV_LINKS } from "./header";
+import LocalizedLink from "@/components/localized-link";
 import MobileLanguageSwitcher from "@/components/mobile-language-switcher";
 import Socials from "@/components/socials";
-import { useWindowSize } from "@uidotdev/usehooks";
-import LocalizedLink from "@/components/localized-link";
+import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
+import { NAV_LINKS } from "./header";
 interface FooterProps {
   variant?: "light" | "dark";
 }
@@ -12,8 +11,6 @@ interface FooterProps {
 const year = new Date().getFullYear();
 
 const Footer = ({ variant = "light" }: FooterProps) => {
-  const { width } = useWindowSize();
-  const isMobile = width && width < 768;
   const isDark = variant === "dark";
   const { t } = useTranslation();
 

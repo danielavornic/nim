@@ -1,11 +1,9 @@
-import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { languages } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
-  const navigate = useLocalizedNavigate();
 
   return (
     <div className="from-go-neon-green to-secondary flex h-6 w-[100px] items-center justify-between rounded-full bg-gradient-to-r p-0.5 px-[9px]">

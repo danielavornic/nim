@@ -2,7 +2,6 @@ import { cn } from "@/lib/utils";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import SmoothScroll from "@/components/smooth-scroll";
 
 export default function RootLayout() {
   const location = useLocation();

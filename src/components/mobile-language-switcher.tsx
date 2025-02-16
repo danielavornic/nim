@@ -1,4 +1,3 @@
-import { useLocalizedNavigate } from "@/hooks/use-localized-navigate";
 import { languages } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
