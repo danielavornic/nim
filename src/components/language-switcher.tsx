@@ -17,7 +17,6 @@ const LanguageSwitcher = () => {
             key={lang}
             onClick={() => {
               i18n.changeLanguage(lang);
-              navigate("/", { replace: true });
             }}
             className={cn(
               "hover:border-background flex h-6 w-6 items-center justify-center rounded-full border border-transparent pt-[3px] text-[16px] leading-[1] font-extrabold uppercase transition-all",

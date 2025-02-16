@@ -20,12 +20,12 @@ const MobileMenu = () => {
       </SheetTrigger>
       <SheetContent
         side="top"
-        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] overflow-y-auto p-0"
+        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] overflow-y-auto p-0 px-4"
         hideCloseButton
       >
         <div className="container mx-auto h-full">
           <div className="flex h-full flex-col justify-between py-[28px]">
-            <SheetHeader className="flex flex-row justify-between space-y-0 p-0">
+            <SheetHeader className="flex flex-row justify-between space-y-0">
               <LocalizedLink to="/">
                 <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
               </LocalizedLink>

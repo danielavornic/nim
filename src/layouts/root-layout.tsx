@@ -8,6 +8,9 @@ export default function RootLayout() {
   const location = useLocation();
   const isHome =
     location.pathname === "/" ||
+    location.pathname === "/ro/" ||
+    location.pathname === "/en/" ||
+    location.pathname === "/ru/" ||
     location.pathname === "/ro" ||
     location.pathname === "/en" ||
     location.pathname === "/ru";

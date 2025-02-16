@@ -12,12 +12,23 @@
       "june": "Iunie",
       "megamix_description": " Cele mai mari hituri Născute în Moldova din ultimii 25 de ani. \n Mega Mix — o oră în care melodiile legendare vor fi readuse în lumina reflectoarelor prin interpretări live ale artiștilor prezenți pe scenă sau prin prestații digitale inovatoare.",
       "info_tickets": "Info Bilete"
+    },
+    "about": {
+      "title": "Despre Festival",
+      "description": "Iubești Moldova? Nu ești singur! Ești de-al Nostru. \n\nNăscut în Moldova este Festivalul Muzicii Noastre. \nScopul acestuia este să inspire oamenii să iubească Moldova. \nIndiferent de etnie, limbă, confesiune, gen sau vârstă, pe oamenii noștri îi unește o simțire a casei și o formare comună."
     }
+  },
+  "partners": {
+    "title": "Parteneri"
   },
   "meta": {
     "home": {
       "title": "Născut în Moldova Festival",
       "description": "Născut în Moldova este Festivalul Muzicii Noastre. Scopul acestuia este să inspire oamenii să iubească Moldova. Indiferent de etnie, limbă, confesiune, gen sau vârstă, pe oamenii noștri îi unește o simțire a casei și o formare comună."
+    },
+    "partners": {
+      "title": "Parteneri",
+      "description": "Partenerii festivalului Născut în Moldova"
     }
   }
 }

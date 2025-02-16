@@ -5,6 +5,8 @@ import useCursorPosition from "./hooks/use-cursor-position";
 import useMapAnimation from "./hooks/use-map-animation";
 import { useWindowSize } from "@uidotdev/usehooks";
 import Hero from "./components/hero";
+import AboutSection from "./components/about";
+import { useMeta } from "@/hooks/use-meta";
 
 const DESKTOP_WIDTH = 1024;
 const MAP_VISIBILITY_KEY = "map-visibility-shown";
@@ -47,6 +49,8 @@ const HomePage = () => {
     }
   }, []);
 
+  useMeta("home");
+
   return (
     <>
       <div
@@ -56,6 +60,8 @@ const HomePage = () => {
         })}
       >
         <Hero key={isMapVisible ? "visible" : "hidden"} />
+        <AboutSection />
+        <section className="bg-background h-[200px]" />
       </div>
 
       {isDesktop && shouldMountMap && (

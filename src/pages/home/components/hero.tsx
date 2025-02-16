@@ -79,8 +79,8 @@ const HeroDesktop = () => {
         </div>
 
         <HeroGraphics scrollYProgress={scrollYProgress} />
-        <div className="absolute right-0 bottom-0 left-0 z-0 h-[70vh] bg-gradient-to-t from-[#00DF7550] from-5% via-[#00DF7510] to-transparent" />
-        <img src="/hero-radial.png" alt="Hero Radial" className="absolute right-0 bottom-0 left-0 z-[3] h-[70vh]" />
+        <div className="absolute right-0 bottom-0 left-0 z-0 h-[70dvh] bg-gradient-to-t from-[#00DF7550] from-5% via-[#00DF7510] to-transparent" />
+        <img src="/hero-radial.png" alt="Hero Radial" className="absolute right-0 bottom-0 left-0 z-[3] h-[70dvh]" />
       </motion.section>
     </div>
   );

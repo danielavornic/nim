@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import RootLayout from "../layouts/root-layout";
 import HomePage from "../pages/home/home";
+import PartnersPage from "@/pages/partners/partners";
 
 const languages = ["en", "ro", "ru"];
 
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />
+      },
+      {
+        path: "partners",
+        element: <PartnersPage />
       }
     ]
   }

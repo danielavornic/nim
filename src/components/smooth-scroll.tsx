@@ -21,8 +21,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     return () => resizeObserver.disconnect();
   }, [scrollRef, resizePageHeight]);
 
-  const { scrollY } = useViewportScroll();
-  // measures how many pixels user has scrolled vertically
+  const { scrollY } = useViewportScroll(); // measures how many pixels user has scrolled vertically
   // as scrollY changes between 0px and the scrollable height, create a negative scroll value...
   // ... based on current scroll position to translateY the document in a natural way
   const transform = useTransform(scrollY, [0, pageHeight], [0, -pageHeight]);
@@ -33,7 +32,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     <>
       <motion.div
         ref={scrollRef}
-        style={{ y: spring }}
+        style={{ y: spring }} // translateY of scroll container using negative scroll value
         className="fixed top-0 left-0 w-full overflow-hidden will-change-transform"
       >
         {children}

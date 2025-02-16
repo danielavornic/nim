@@ -5,7 +5,7 @@ import FacebookIcon from "@/icons/facebook.svg?react";
 import TikTokIcon from "@/icons/tiktok.svg?react";
 
 interface SocialsProps {
-  variant?: "footer" | "header" | "mobile-menu";
+  variant?: "footer" | "header" | "mobile-menu" | "footer-light";
 }
 
 type SocialLink = {
@@ -44,7 +44,8 @@ const Socials = ({ variant = "header" }: SocialsProps) => {
         <a href={social.link} key={social.name}>
           {React.cloneElement(social.icon as React.ReactElement<{ className?: string }>, {
             className: cn("size-5 hover:rotate-12 transition-transform duration-300", {
-              "text-secondary text-background size-12": variant === "footer",
+              "text-background size-12": variant === "footer",
+              "text-muted size-12": variant === "footer-light",
               "size-12 hover:text-muted": variant === "mobile-menu",
               "text-secondary transform hover:text-muted": variant === "header"
             })

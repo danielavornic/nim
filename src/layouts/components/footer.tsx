@@ -54,8 +54,8 @@ const Footer = ({ variant = "light" }: FooterProps) => {
                 ))}
               </nav>
               <div className="flex flex-col items-center gap-10 md:flex-row-reverse md:gap-8">
-                <Socials variant="footer" />
-                <MobileLanguageSwitcher variant="footer" />
+                <Socials variant={isDark ? "footer" : "footer-light"} />
+                <MobileLanguageSwitcher variant={isDark ? "footer" : "footer-light"} />
               </div>
             </div>
 

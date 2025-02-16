@@ -12,12 +12,24 @@
       "june": "JUNE",
       "megamix_description": "The biggest hits Born in Moldova from the last 25 years. \nMega Mix — an hour where legendary songs will be brought back into the spotlight through live performances by artists on stage or through innovative digital showcases.",
       "info_tickets": "Info Tickets"
+    },
+    "about": {
+      "title": "About Festival",
+      "description": "Do you love Moldova? You're not alone! You're of one of ours. \n\nBNăscut în Moldova is the Festival of Our Music. \nIts purpose is to inspire people to love Moldova.\n Regardless of ethnicity, language, religion, gender, or age, our people are united by a shared sense of home and a common cultural identity."
     }
+  },
+  "partners": {
+    "title": "Partners",
+    "description": "Partners of the Born in Moldova Festival"
   },
   "meta": {
     "home": {
       "title": "Născut în Moldova Festival",
       "description": "Născut în Moldova is Our Music Festival. Its purpose is to inspire people to love Moldova. Regardless of ethnicity, language, religion, gender or age, our people are united by a sense of home and common formation."
+    },
+    "partners": {
+      "title": "Partners",
+      "description": "Partners of the Born in Moldova Festival"
     }
   }
 }

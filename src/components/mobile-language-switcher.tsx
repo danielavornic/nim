@@ -3,9 +3,12 @@ import { languages } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
 
-const MobileLanguageSwitcher = ({ variant }: { variant?: "header" | "footer" }) => {
+interface MobileLanguageSwitcherProps {
+  variant?: "header" | "footer" | "footer-light";
+}
+
+const MobileLanguageSwitcher = ({ variant }: MobileLanguageSwitcherProps) => {
   const { i18n } = useTranslation();
-  const navigate = useLocalizedNavigate();
 
   return (
     <div className="flex gap-7">
@@ -17,12 +20,13 @@ const MobileLanguageSwitcher = ({ variant }: { variant?: "header" | "footer" }) 
             key={lang}
             onClick={() => {
               i18n.changeLanguage(lang);
-              navigate("/", { replace: true });
             }}
             className={cn(
-              "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full pt-[5px] text-[29px] font-[900] uppercase",
+              "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full pt-[5px] text-[28px] font-[900] uppercase",
               {
                 "bg-background": variant === "footer",
+                "from-go-neon-green to-secondary text-background hover:bg-muted bg-gradient-to-r":
+                  variant === "footer-light",
                 "bg-primary text-background hover:bg-muted": variant === "header"
               }
             )}
