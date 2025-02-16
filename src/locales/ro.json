@@ -6,6 +6,14 @@
     "faq": "FAQ",
     "partners": "Parteneri"
   },
+  "home": {
+    "hero": {
+      "zimbru_stadium": "St. Zimbru",
+      "june": "Iunie",
+      "megamix_description": " Cele mai mari hituri Născute în Moldova din ultimii 25 de ani. \n Mega Mix — o oră în care melodiile legendare vor fi readuse în lumina reflectoarelor prin interpretări live ale artiștilor prezenți pe scenă sau prin prestații digitale inovatoare.",
+      "info_tickets": "Info Bilete"
+    }
+  },
   "meta": {
     "home": {
       "title": "Născut în Moldova Festival",

@@ -6,6 +6,14 @@
     "tickets": "Tickets",
     "faq": "FAQ"
   },
+  "home": {
+    "hero": {
+      "zimbru_stadium": "ST. ZIMBRU",
+      "june": "JUNE",
+      "megamix_description": "The biggest hits Born in Moldova from the last 25 years. \nMega Mix — an hour where legendary songs will be brought back into the spotlight through live performances by artists on stage or through innovative digital showcases.",
+      "info_tickets": "Info Tickets"
+    }
+  },
   "meta": {
     "home": {
       "title": "Născut în Moldova Festival",

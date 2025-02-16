@@ -4,6 +4,7 @@ import MapOverlay from "./components/map-overlay";
 import useCursorPosition from "./hooks/use-cursor-position";
 import useMapAnimation from "./hooks/use-map-animation";
 import { useWindowSize } from "@uidotdev/usehooks";
+import Hero from "./components/hero";
 
 const DESKTOP_WIDTH = 1024;
 const MAP_VISIBILITY_KEY = "map-visibility-shown";
@@ -48,12 +49,11 @@ const HomePage = () => {
     <>
       <div
         ref={welcomeRef}
-        className={cn("flex min-h-screen items-center justify-center", {
-          "hidden opacity-0": !isDesktop,
-          hidden: isMapVisible
+        className={cn("flex w-full flex-col", {
+          "hidden opacity-0": isMapVisible
         })}
       >
-        <h1 className="text-4xl font-bold">Welcome to Moldova</h1>
+        <Hero />
       </div>
 
       {isDesktop && shouldMountMap && (

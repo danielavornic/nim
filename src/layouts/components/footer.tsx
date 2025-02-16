@@ -47,7 +47,7 @@ const Footer = ({ variant = "light" }: FooterProps) => {
                   <LocalizedLink
                     key={link.labelCode}
                     to={link.link}
-                    className="block text-[40px] font-[900] uppercase underline-offset-8 hover:underline md:text-[28px]"
+                    className="block text-[40px] font-[900] uppercase underline-offset-8 transition-all duration-300 hover:underline md:text-[28px]"
                   >
                     {t(link.labelCode)}
                   </LocalizedLink>
@@ -61,10 +61,16 @@ const Footer = ({ variant = "light" }: FooterProps) => {
 
             <div className="flex flex-col items-center gap-10 py-6 md:items-start md:justify-between md:py-0">
               <div className="xs:text-[30px] flex flex-col items-center gap-2 text-[26px] leading-tight font-[900] md:items-start md:gap-0.5">
-                <a href="tel:+37368300694" className="block underline-offset-8 hover:underline">
+                <a
+                  href="tel:+37368300694"
+                  className="block underline-offset-8 transition-all duration-300 hover:underline"
+                >
                   (+373) 068 300 694
                 </a>
-                <a href="mailto:contact@versusartist.com" className="block underline-offset-8 hover:underline">
+                <a
+                  href="mailto:contact@versusartist.com"
+                  className="block underline-offset-8 transition-all duration-300 hover:underline"
+                >
                   contact@versusartist.com
                 </a>
               </div>

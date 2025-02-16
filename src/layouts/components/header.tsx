@@ -28,8 +28,13 @@ const Header = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
   const { t } = useTranslation();
 
   return (
-    <header className={cn("bg-background flex w-full flex-col items-center gap-[30px] py-7", className)}>
-      <div className="container flex items-center justify-between px-4 lg:justify-center">
+    <header
+      className={cn(
+        "bg-background 3xl:!flex-col 3xl:!justify-start flex w-full flex-col items-center gap-[30px] py-7 xl:flex-row xl:justify-center",
+        className
+      )}
+    >
+      <div className="3xl:!w-full container flex items-center justify-between px-4 lg:justify-center xl:w-auto">
         <LocalizedLink to="/">
           <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
         </LocalizedLink>
@@ -43,7 +48,7 @@ const Header = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
             <LocalizedLink
               key={link.labelCode}
               to={link.link}
-              className="hover:text-muted text-secondary -mt-1 h-[32px] text-[28px] font-[800] uppercase underline-offset-8 transition-colors duration-300 hover:scale-105 active:underline"
+              className="hover:text-muted text-secondary -mt-1 h-[32px] text-[28px] font-[800] uppercase underline-offset-8 transition-all duration-300 hover:scale-105 active:underline"
             >
               {t(link.labelCode)}
             </LocalizedLink>

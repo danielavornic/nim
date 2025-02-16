@@ -98,12 +98,21 @@
   --radius-xl: calc(var(--radius) + 4px);
   --breakpoint-xxs: 360px;
   --breakpoint-xs: 480px;
+  --breakpoint-3xl: 1860px;
+  --breakpoint-4xl: 2500px;
+
+  --header-height-mobile: 109px;
+  --header-height-desktop: 167px;
+
+  --color-go-blue: var(--go-blue);
+  --color-go-dark-green: var(--go-dark-greeen);
+  --color-go-neon-green: var(--go-neon-green);
 }
 
 @layer base {
   html {
     font-family: var(--default-font-family);
-    @apply scrollbar scrollbar-thumb-foreground scrollbar-track-background;
+    @apply scrollbar scrollbar-thumb-foreground scrollbar-track-background overflow-x-hidden;
   }
 
   * {

@@ -8,7 +8,7 @@ const LanguageSwitcher = () => {
   const navigate = useLocalizedNavigate();
 
   return (
-    <div className="flex h-6 w-[100px] items-center justify-between rounded-full bg-gradient-to-r from-[#00FAA1] to-[#8AFE6E] p-0.5 px-[9px]">
+    <div className="from-go-neon-green to-secondary flex h-6 w-[100px] items-center justify-between rounded-full bg-gradient-to-r p-0.5 px-[9px]">
       {languages.map((lang) => {
         const isActive = lang === i18n.language;
 
@@ -27,7 +27,7 @@ const LanguageSwitcher = () => {
             <span
               className={cn(
                 "transition-all",
-                isActive ? "bg-gradient-to-r from-[#00FAA1] to-[#8AFE6E] bg-clip-text" : "text-background"
+                isActive ? "from-go-neon-green to-secondary bg-gradient-to-r bg-clip-text" : "text-background"
               )}
             >
               {lang}

@@ -15,7 +15,7 @@ const MobileMenu = () => {
     <Sheet>
       <SheetTrigger asChild>
         <button className="cursor-pointer lg:hidden">
-          <Menu className="size-9 bg-gradient-to-r from-[#00FAA1] to-[#8AFE6E] bg-clip-text" />
+          <Menu className="from-go-neon-green to-secondary size-9 bg-gradient-to-r bg-clip-text" />
         </button>
       </SheetTrigger>
       <SheetContent
@@ -24,14 +24,14 @@ const MobileMenu = () => {
         hideCloseButton
       >
         <div className="container mx-auto h-full">
-          <div className="flex h-full flex-col justify-between px-4 py-[28px]">
+          <div className="flex h-full flex-col justify-between py-[28px]">
             <SheetHeader className="flex flex-row justify-between space-y-0 p-0">
               <LocalizedLink to="/">
                 <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
               </LocalizedLink>
               <SheetClose asChild>
                 <button>
-                  <X className="size-9 cursor-pointer bg-gradient-to-r from-[#00FAA1] to-[#8AFE6E] bg-clip-text" />
+                  <X className="from-go-neon-green to-secondary size-9 cursor-pointer bg-gradient-to-r bg-clip-text" />
                 </button>
               </SheetClose>
             </SheetHeader>
@@ -45,7 +45,7 @@ const MobileMenu = () => {
                 <LocalizedLink
                   key={link.labelCode}
                   to={link.link}
-                  className="text-foreground hover:text-background border-primary block w-fit border bg-gradient-to-r from-[#00FAA1] to-[#8AFE6E] bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 hover:bg-clip-padding"
+                  className="text-foreground hover:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 hover:bg-clip-padding"
                 >
                   {t(link.labelCode)}
                 </LocalizedLink>

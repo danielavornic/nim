@@ -29,7 +29,7 @@ const MobileLanguageSwitcher = ({ variant }: { variant?: "header" | "footer" }) 
           >
             <span
               className={cn({
-                "bg-gradient-to-r from-[#00FAA1] to-[#8AFE6E] bg-clip-text text-transparent": variant === "footer"
+                "from-go-neon-green to-secondary bg-gradient-to-r bg-clip-text text-transparent": variant === "footer"
               })}
             >
               {lang}
