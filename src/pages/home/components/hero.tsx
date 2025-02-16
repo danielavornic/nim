@@ -38,7 +38,7 @@ const HeroMobile = () => {
         </div>
 
         <div className="mt-12">
-          <img src="/hero-lateral.svg" alt="Hero Lateral" className="mx-auto w-full max-w-[1000px] lg:mb-[-200px]" />
+          <img src="/hero-lateral.svg" alt="Hero Lateral" className="ml-auto w-full max-w-[1000px] lg:mb-[-200px]" />
         </div>
       </section>
     </div>
@@ -47,10 +47,13 @@ const HeroMobile = () => {
 
 const HeroDesktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"]
+  });
 
   return (
-    <div ref={containerRef} className="relative h-[calc(160dvh)]">
+    <div ref={containerRef} className="relative h-[calc(180dvh)]">
       <motion.section className="bg-background sticky top-0 z-10 h-[100dvh] overflow-hidden">
         <Header className="bg-transparent" />
         <div className="4xl:!pt-24 3xl:!pt-[5dvh] relative z-10 container mx-auto pt-10 xl:pt-[5dvh] 2xl:pt-[3dvh]">

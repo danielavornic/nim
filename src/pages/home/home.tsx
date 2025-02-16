@@ -7,6 +7,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import Hero from "./components/hero";
 import AboutSection from "./components/about";
 import { useMeta } from "@/hooks/use-meta";
+import LineUpSection from "./components/lineup";
 
 const DESKTOP_WIDTH = 1024;
 const MAP_VISIBILITY_KEY = "map-visibility-shown";
@@ -61,7 +62,7 @@ const HomePage = () => {
       >
         <Hero key={isMapVisible ? "visible" : "hidden"} />
         <AboutSection />
-        <section className="bg-background h-[200px]" />
+        <LineUpSection />
       </div>
 
       {isDesktop && shouldMountMap && (

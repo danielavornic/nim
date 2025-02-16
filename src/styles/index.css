@@ -22,15 +22,14 @@
   --secondary-foreground: hsl(163 61% 7%);
   --muted: hsl(93 95% 84%);
   --muted-foreground: hsl(163 71% 12%);
-  --accent: hsl(70 95% 78%);
+  --accent: hsl(81 90% 71%);
   --accent-foreground: hsl(163 61% 7%);
 
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(0 0% 98%);
 
   --go-blue: hsl(218 100% 50%);
-  --go-dark-greeen: hsl(170 95% 17%);
-  /* partners bg */
+  --go-dark-green: hsl(170 95% 17%);
   --go-neon-green: hsl(159 100% 49%); 
 
   --border: hsl(0 0% 89.8%);
@@ -98,6 +97,7 @@
   --radius-xl: calc(var(--radius) + 4px);
   --breakpoint-xxs: 360px;
   --breakpoint-xs: 480px;
+  --breakpoint-1.5xl: 1400px;
   --breakpoint-3xl: 1860px;
   --breakpoint-4xl: 2500px;
 
@@ -105,7 +105,7 @@
   --header-height-desktop: 167px;
 
   --color-go-blue: var(--go-blue);
-  --color-go-dark-green: var(--go-dark-greeen);
+  --color-go-dark-green: var(--go-dark-green);
   --color-go-neon-green: var(--go-neon-green);
 }
 
