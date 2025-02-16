@@ -47,7 +47,6 @@ const HeroMobile = () => {
 
 const HeroDesktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-
   const { scrollYProgress } = useScroll();
 
   return (

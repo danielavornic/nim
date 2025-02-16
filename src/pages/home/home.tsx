@@ -28,6 +28,8 @@ const HomePage = () => {
   useEffect(() => {
     if (!isMapVisible) {
       sessionStorage.setItem(MAP_VISIBILITY_KEY, "true");
+      // Reset scroll position when map is dismissed
+      window.scrollTo(0, 0);
       // after animation completes
       const timer = setTimeout(() => {
         setShouldMountMap(false);
@@ -53,7 +55,7 @@ const HomePage = () => {
           "hidden opacity-0": isMapVisible
         })}
       >
-        <Hero />
+        <Hero key={isMapVisible ? "visible" : "hidden"} />
       </div>
 
       {isDesktop && shouldMountMap && (
