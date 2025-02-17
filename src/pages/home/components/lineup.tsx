@@ -204,7 +204,8 @@ const LineUpSection = () => {
   const { width } = useWindowSize();
   const isMobile = width && width < 1024;
 
-  return isMobile ? <LineUpSectionMobile /> : <LineUpSectionDesktop />;
+  return isMobile ? <LineUpSectionMobile /> : null;
+  // : <LineUpSectionDesktop />;
 };
 
 export default LineUpSection;

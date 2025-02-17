@@ -1,7 +1,15 @@
 import LocalizedLink from "@/components/localized-link";
 import MobileLanguageSwitcher from "@/components/mobile-language-switcher";
 import Socials from "@/components/socials";
-import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger
+} from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { NAV_LINKS } from "./header";
@@ -34,6 +42,8 @@ const MobileMenu = () => {
                   <X className="from-go-neon-green to-secondary size-9 cursor-pointer bg-gradient-to-r bg-clip-text" />
                 </button>
               </SheetClose>
+              <SheetTitle className="sr-only">NIM</SheetTitle>
+              <SheetDescription className="sr-only">Mobile Menu</SheetDescription>
             </SheetHeader>
 
             <div className="mt-12">
@@ -42,13 +52,14 @@ const MobileMenu = () => {
 
             <nav className="flex flex-1 flex-col items-center gap-7 py-12">
               {NAV_LINKS.map((link) => (
-                <LocalizedLink
-                  key={link.labelCode}
-                  to={link.link}
-                  className="text-foreground hover:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 hover:bg-clip-padding"
-                >
-                  {t(link.labelCode)}
-                </LocalizedLink>
+                <SheetClose asChild key={link.labelCode}>
+                  <LocalizedLink
+                    to={link.link}
+                    className="text-foreground hover:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 hover:bg-clip-padding"
+                  >
+                    {t(link.labelCode)}
+                  </LocalizedLink>
+                </SheetClose>
               ))}
             </nav>
 
