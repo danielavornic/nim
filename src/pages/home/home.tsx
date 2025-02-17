@@ -57,7 +57,7 @@ const HomePage = () => {
       <div
         ref={welcomeRef}
         className={cn("flex w-full flex-col", {
-          "hidden opacity-0": isMapVisible
+          "hidden opacity-0": isMapVisible && isDesktop
         })}
       >
         <Hero key={isMapVisible ? "visible" : "hidden"} />

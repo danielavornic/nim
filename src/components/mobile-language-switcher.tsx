@@ -1,6 +1,7 @@
 import { languages } from "@/i18n";
 import { cn } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 
 interface MobileLanguageSwitcherProps {
   variant?: "header" | "footer" | "footer-light";
@@ -8,6 +9,15 @@ interface MobileLanguageSwitcherProps {
 
 const MobileLanguageSwitcher = ({ variant }: MobileLanguageSwitcherProps) => {
   const { i18n } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLanguageChange = (lang: string) => {
+    const currentPath = location.pathname;
+    const newPath = currentPath.replace(`/${i18n.language}`, `/${lang}`);
+    i18n.changeLanguage(lang);
+    navigate(newPath);
+  };
 
   return (
     <div className="flex gap-7">
@@ -17,9 +27,7 @@ const MobileLanguageSwitcher = ({ variant }: MobileLanguageSwitcherProps) => {
         return (
           <button
             key={lang}
-            onClick={() => {
-              i18n.changeLanguage(lang);
-            }}
+            onClick={() => handleLanguageChange(lang)}
             className={cn(
               "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full pt-[5px] text-[28px] font-[900] uppercase",
               {

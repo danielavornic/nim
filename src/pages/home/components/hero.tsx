@@ -53,7 +53,7 @@ const HeroDesktop = () => {
   });
 
   return (
-    <div ref={containerRef} className="relative h-[calc(180dvh)]">
+    <div ref={containerRef} className="relative h-[calc(150dvh)]">
       <motion.section className="bg-background sticky top-0 z-10 h-[100dvh] overflow-hidden">
         <Header className="bg-transparent" />
         <div className="4xl:!pt-24 3xl:!pt-[5dvh] relative z-10 container mx-auto pt-10 xl:pt-[5dvh] 2xl:pt-[3dvh]">

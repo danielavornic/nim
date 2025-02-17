@@ -21,6 +21,11 @@ i18n
     fallbackLng: "ro",
     interpolation: {
       escapeValue: false
+    },
+    detection: {
+      order: ["path", "localStorage", "navigator"],
+      lookupFromPathIndex: 0,
+      caches: ["localStorage"]
     }
   } as const);
 
