@@ -52,6 +52,32 @@
         "description": "6 people"
       }
     },
-    "buy": "Buy Ticket"
+    "buy": "Buy Ticket",
+    "faq": [
+      {
+        "question": "What is the refund policy?",
+        "answer": "Refunds are available <b>up to 7 days</b> before the event. To request a refund:<ul><li>Contact our support team</li><li>Provide your order number</li><li>State your reason for refund</li></ul>After this period, tickets become <b>non-refundable</b>."
+      },
+      {
+        "question": "What items are prohibited at the festival?",
+        "answer": "<b>The following items are not allowed:</b><ul><li>Professional photo/video equipment</li><li>Food and drinks from outside</li><li>Glass containers</li><li>Weapons of any kind</li><li>Illegal substances</li><li>Drones or aerial equipment</li><li>Pets (except service animals)</li></ul>"
+      },
+      {
+        "question": "What time do the gates open?",
+        "answer": "Gates open at <b>16:00</b> each day. We recommend arriving early to avoid queues. <i>Last entry is at 22:00</i>."
+      },
+      {
+        "question": "Is there parking available?",
+        "answer": "Yes, there are <b>two parking areas</b>:<ul><li>Main Parking (P1) - near the stadium entrance</li><li>Overflow Parking (P2) - 5 minutes walk</li></ul>Parking fee is <b>50 MDL</b> per day."
+      },
+      {
+        "question": "Are children allowed at the festival?",
+        "answer": "Yes! Children are welcome at the festival:<ul><li>Ages 0-7: Free entry</li><li>Ages 8-12: Reduced price ticket required</li><li>Ages 13+: Full price ticket required</li></ul><i>All children must be accompanied by an adult</i>."
+      },
+      {
+        "question": "What payment methods are accepted?",
+        "answer": "We accept the following payment methods:<ul><li>Credit/Debit cards</li><li>Cash (MDL only)</li><li>Mobile payments</li><li>Festival tokens</li></ul><i>Note: Some vendors may only accept festival tokens</i>."
+      }
+    ]
   }
 }

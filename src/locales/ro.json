@@ -51,6 +51,16 @@
         "description": "6 persoane"
       }
     },
-    "buy": "Cumpără Bilet"
+    "buy": "Cumpără Bilet",
+    "faq": [
+      {
+        "question": "Există restricții de vârstă?",
+        "answer": "<p>✔️ Da, accesul la festival este permis astfel:</p> <ul><li><b>Pentru persoanele de 16 ani și peste</b> – pot achiziționa singuri bilet și participa la festival. </li><li><b>Pentru persoanele sub 16 ani</b> – este necesară prezența unui adult însoțitor.</li></ul>"
+      },
+      {
+        "question": "Pot cumpăra bilete pe loc? Cum pot achita?",
+        "answer": "<p>✔️ Da, biletele pot fi achiziționate și la fața locului. Plata se poate face în numerar (cash) sau cucardul.</p><p>✔️ Până la festival, biletele sunt disponibile online pe <a href='https://afisha.md' target='_blank'>afisha.md</a>.</p> "
+      }
+    ]
   }
 }

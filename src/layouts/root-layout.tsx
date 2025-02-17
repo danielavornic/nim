@@ -12,7 +12,26 @@ export default function RootLayout() {
     location.pathname === "/";
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const scrollToHash = () => {
+      if (location.hash) {
+        setTimeout(() => {
+          const element = document.querySelector(location.hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      } else {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    scrollToHash();
+
+    window.addEventListener("load", scrollToHash);
+
+    return () => {
+      window.removeEventListener("load", scrollToHash);
+    };
   }, [location]);
 
   return (

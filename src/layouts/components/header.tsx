@@ -48,7 +48,9 @@ const Header = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
             <LocalizedLink
               key={link.labelCode}
               to={link.link}
-              className="hover:text-muted text-secondary -mt-1 h-[32px] text-[28px] font-[800] uppercase underline-offset-8 transition-all duration-300 hover:scale-105 active:underline"
+              className={cn(
+                "hover:text-muted text-secondary -mt-1 h-[32px] text-[28px] font-[800] uppercase underline-offset-8 transition-all duration-300 hover:scale-105 active:underline"
+              )}
             >
               {t(link.labelCode)}
             </LocalizedLink>

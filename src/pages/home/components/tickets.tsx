@@ -6,9 +6,9 @@ const TicketsSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="tickets" className="bg-background py-16 lg:px-4 lg:py-32 xl:px-0">
-      <div className="container mx-auto max-w-[77rem] px-4">
-        <h2 className="from-go-neon-green to-accent 3xl:!text-[120px] bg-linear-20 bg-clip-text text-center text-[90px] font-black tracking-tighter text-transparent uppercase lg:text-left lg:text-[100px] 2xl:text-[110px]">
+    <section className="bg-background py-16 lg:px-4 lg:py-32 xl:px-0">
+      <div id="tickets" className="container mx-auto max-w-[77rem] px-4">
+        <h2 className="from-go-neon-green to-accent 3xl:!text-[120px] bg-linear-20 to-50% bg-clip-text text-center text-[90px] font-black tracking-tighter text-transparent uppercase lg:text-left lg:text-[100px] 2xl:text-[110px]">
           {t("tickets.title")}
         </h2>
 

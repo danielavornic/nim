@@ -1,14 +1,16 @@
+import { useMeta } from "@/hooks/use-meta";
 import { cn } from "@/lib/utils";
-import { useRef, useState, useEffect } from "react";
+import { useWindowSize } from "@uidotdev/usehooks";
+import { useEffect, useRef, useState } from "react";
+import AboutSection from "./components/about";
+import FAQ from "./components/faq";
+import Hero from "./components/hero";
+import LineUpSection from "./components/lineup";
 import MapOverlay from "./components/map-overlay";
+import TicketsSection from "./components/tickets";
 import useCursorPosition from "./hooks/use-cursor-position";
 import useMapAnimation from "./hooks/use-map-animation";
-import { useWindowSize } from "@uidotdev/usehooks";
-import Hero from "./components/hero";
-import AboutSection from "./components/about";
-import { useMeta } from "@/hooks/use-meta";
-import LineUpSection from "./components/lineup";
-import TicketsSection from "./components/tickets";
+
 const DESKTOP_WIDTH = 1024;
 const MAP_VISIBILITY_KEY = "map-visibility-shown";
 
@@ -63,6 +65,7 @@ const HomePage = () => {
         <AboutSection />
         <LineUpSection />
         <TicketsSection />
+        <FAQ />
       </div>
 
       {isDesktop && shouldMountMap && (
