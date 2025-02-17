@@ -2,36 +2,34 @@ import { cn } from "@/lib/utils";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-import { ARTISTS } from "../constants";
 import useLineupAnimation from "../hooks/use-lineup-animation";
 import ArtistFlag from "./artist-flag";
+import { ARTISTS } from "../constants/artists";
 
 const LineUpSectionMobile = () => {
   return (
-    <div className="mt-12 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 lg:mt-20 lg:gap-16">
-      <section className="bg-background py-32">
-        <div className="container mx-auto px-4">
-          <h2 className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[900] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]">
-            Line
-            <br className="sm:hidden" />
-            Up
-          </h2>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 lg:mt-20 lg:gap-16">
-            {ARTISTS.map((artist, index) => (
-              <div
-                key={artist.name}
-                className={cn("relative flex justify-center", {
-                  "md:justify-start": index % 2 === 1,
-                  "md:justify-end": index % 2 === 0
-                })}
-              >
-                <ArtistFlag key={artist.name} artist={artist} />
-              </div>
-            ))}
-          </div>
+    <section className="bg-background py-32">
+      <div className="container mx-auto px-4">
+        <h2 className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[900] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]">
+          Line
+          <br className="sm:hidden" />
+          Up
+        </h2>
+        <div className="mt-12 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 lg:mt-20 lg:gap-16">
+          {ARTISTS.map((artist, index) => (
+            <div
+              key={artist.name}
+              className={cn("relative flex justify-center", {
+                "md:justify-start": index % 2 === 1,
+                "md:justify-end": index % 2 === 0
+              })}
+            >
+              <ArtistFlag key={artist.name} artist={artist} />
+            </div>
+          ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

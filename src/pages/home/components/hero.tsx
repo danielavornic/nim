@@ -2,7 +2,7 @@ import Header from "@/layouts/components/header";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { motion, useScroll } from "framer-motion";
 import React, { useRef } from "react";
-import { ARTISTS } from "../constants";
+import { ARTISTS } from "../constants/artists";
 import HeroEventInfo from "./hero-event-info";
 import HeroGraphics from "./hero-graphics";
 import MegaMixTooltip from "./mega-mix-tooltip";

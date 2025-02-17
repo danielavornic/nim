@@ -8,7 +8,7 @@ import Hero from "./components/hero";
 import AboutSection from "./components/about";
 import { useMeta } from "@/hooks/use-meta";
 import LineUpSection from "./components/lineup";
-
+import TicketsSection from "./components/tickets";
 const DESKTOP_WIDTH = 1024;
 const MAP_VISIBILITY_KEY = "map-visibility-shown";
 
@@ -31,7 +31,6 @@ const HomePage = () => {
   useEffect(() => {
     if (!isMapVisible) {
       sessionStorage.setItem(MAP_VISIBILITY_KEY, "true");
-      // Reset scroll position when map is dismissed
       window.scrollTo(0, 0);
       // after animation completes
       const timer = setTimeout(() => {
@@ -63,6 +62,7 @@ const HomePage = () => {
         <Hero key={isMapVisible ? "visible" : "hidden"} />
         <AboutSection />
         <LineUpSection />
+        <TicketsSection />
       </div>
 
       {isDesktop && shouldMountMap && (

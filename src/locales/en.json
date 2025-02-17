@@ -31,5 +31,27 @@
       "title": "Partners",
       "description": "Partners of the Born in Moldova Festival"
     }
+  },
+  "tickets": {
+    "title": "Tickets",
+    "days": {
+      "one": "1 Day",
+      "two": "2 Days"
+    },
+    "categories": {
+      "standard": {
+        "title": "Standard",
+        "description": "1 person"
+      },
+      "family": {
+        "title": "Family",
+        "description": "2 adults and 2 children"
+      },
+      "friends": {
+        "title": "Friends",
+        "description": "6 people"
+      }
+    },
+    "buy": "Buy Ticket"
   }
 }

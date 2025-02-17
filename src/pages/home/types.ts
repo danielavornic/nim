@@ -12,3 +12,20 @@ export interface Artist {
     className?: string;
   };
 }
+
+export enum TicketCategory {
+  STANDARD = "standard",
+  FAMILY = "family",
+  FRIENDS = "friends"
+}
+
+export enum TicketDuration {
+  ONE_DAY = "one",
+  TWO_DAYS = "two"
+}
+
+export interface TicketPlan {
+  category: TicketCategory;
+  duration: TicketDuration;
+  className: string;
+}

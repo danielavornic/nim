@@ -30,5 +30,27 @@
       "title": "Parteneri",
       "description": "Partenerii festivalului Născut în Moldova"
     }
+  },
+  "tickets": {
+    "title": "Bilete",
+    "days": {
+      "one": "1 Zi",
+      "two": "2 Zile"
+    },
+    "categories": {
+      "standard": {
+        "title": "Standard",
+        "description": "1 persoană"
+      },
+      "family": {
+        "title": "Family",
+        "description": "2 adulți și 2 copii"
+      },
+      "friends": {
+        "title": "Friends",
+        "description": "6 persoane"
+      }
+    },
+    "buy": "Cumpără Bilet"
   }
 }
