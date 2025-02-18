@@ -59,7 +59,51 @@
       },
       {
         "question": "Pot cumpăra bilete pe loc? Cum pot achita?",
-        "answer": "<p>✔️ Da, biletele pot fi achiziționate și la fața locului. Plata se poate face în numerar (cash) sau cucardul.</p><p>✔️ Până la festival, biletele sunt disponibile online pe <a href='https://afisha.md' target='_blank'>afisha.md</a>.</p> "
+        "answer": "<p>✔️ Da, biletele pot fi achiziționate și la fața locului. Plata se poate face în <b>numerar (cash)</b> sau cu <b>cardul</b>.</p><p>✔️ Până la festival, biletele sunt disponibile online pe <a href='https://afisha.md' target='_blank'>afisha.md</a>.</p> "
+      },
+      {
+        "question": "Există toalete și garderobă?",
+        "answer": "<p>✔️Da, festivalul dispune de <b>toalete</b> – se vor folosi cele ale Stadionului Zimbru.</p><p>❌ <b>Nu va exista garderobă</b>, iar depozitarea obiectelor personale nesupravegheate nu este posibilă.</p>"
+      },
+      {
+        "question": "Pot cumpăra mâncare și apă la festival?",
+        "answer": "<p>✔️ Da, vor exista puncte de vânzare pentru mâncare și băuturi.​</p><p>⚠️ <b>Restricții</b>:</p><ul><li>În <b>zona gazonului</b> – accesul este permis doar cu apă plată.</li><li>În <b>zona tribunelor</b> – este permis accesul cu <b>mâncare și băuturi.</b></li></ul>"
+      },
+      {
+        "question": "Cât va dura festivalul?",
+        "answer": "<p>✔️ <b>Open Doors</b>: 12:00 / 13:00 <i>(ora exactă va fi anunțată ulterior).</i></p><p>✔️ <b>Festivalul se va încheia la ora</b>: 00:00 <i>(miezul nopții)</i></p>"
+      },
+      {
+        "question": "Există locuri de parcare?",
+        "answer": "<p>❌ <b>Nu</b> vor fi asigurate locuri de parcare speciale.</p><p>✔️ Recomandăm gestionarea transportului individual în funcție de posibilități.</p>"
+      },
+      {
+        "question": "Cum ajung la festival?",
+        "answer": "<p>✔️ <b>Locație</b>: Stadionul Zimbru, Chișinău.​</p><p>✔️ <b>Transport public direct:</b></p><ul><li><b>Autobuze</b>: 103, 157, 19, 23, 44.​</li><li><b>Troleibuze</b>: 22, 30, 4, 8, 17.</li></ul></p>"
+      },
+      {
+        "question": "Există pază și asistență medicală?",
+        "answer": "✔️ Da, festivalul va beneficia de <b>servicii de pază</b> și <b>asistență medicală</b> pe tot parcursul evenimentului."
+      },
+      {
+        "question": "Ce pot lua cu mine la festival?",
+        "answer": "<p>✔️ <b>Bună dispoziție!</b> 😃​</p><p>❌ <b>Nu este permis accesul</b> cu:</p><ul><li>Apă și mâncare aduse din exterior.</li><li>Obiecte periculoase (a se consulta regulamentul festivalului).</li></ul>"
+      },
+      {
+        "question": "Cum pot achita produsele cumpărate la festival?",
+        "answer": "✔️ Toate cumpărăturile pe teritoriul festivalului pot fi achitate în <b>numerar (cash)</b> sau cu <b>cardul</b>."
+      },
+      {
+        "question": "Va exista merch oficial (tricouri, chipiuri etc.)?",
+        "answer": "✔️ Da, vor fi disponibile produse oficiale de festival <i>(tricouri, chipiuri, accesorii)</i>."
+      },
+      {
+        "question": "Există abonamente pentru familie, prieteni sau grupuri?",
+        "answer": "<p>✔️ Da, există <b>pachete speciale și abonamente</b> pentru grupuri.</p><p>✔️ <b>Prețurile și detaliile</b> sunt disponibile pe site și pe <a href='https://afisha.md' target='_blank'>afisha.md</a>."
+      },
+      {
+        "question": "Ce se întâmplă dacă festivalul se amână?",
+        "answer": "<p>✔️ <b>Dacă festivalul este anulat</b> – banii pentru bilete vor fi returnați.</p><p>✔️ <b>Dacă festivalul este reprogramat</b> – biletele deja achiziționate vor rămâne <b>valabile</b> pentru noua dată."
       }
     ]
   }

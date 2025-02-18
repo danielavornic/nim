@@ -55,28 +55,56 @@
     "buy": "Buy Ticket",
     "faq": [
       {
-        "question": "What is the refund policy?",
-        "answer": "Refunds are available <b>up to 7 days</b> before the event. To request a refund:<ul><li>Contact our support team</li><li>Provide your order number</li><li>State your reason for refund</li></ul>After this period, tickets become <b>non-refundable</b>."
+        "question": "Are there age restrictions?",
+        "answer": "<p>✔️ Yes, festival access is allowed as follows:</p> <ul><li><b>For persons 16 years and older</b> – can purchase tickets and attend the festival independently.</li><li><b>For persons under 16</b> – must be accompanied by an adult.</li></ul>"
       },
       {
-        "question": "What items are prohibited at the festival?",
-        "answer": "<b>The following items are not allowed:</b><ul><li>Professional photo/video equipment</li><li>Food and drinks from outside</li><li>Glass containers</li><li>Weapons of any kind</li><li>Illegal substances</li><li>Drones or aerial equipment</li><li>Pets (except service animals)</li></ul>"
+        "question": "Can I buy tickets on-site? How can I pay?",
+        "answer": "<p>✔️ Yes, tickets can be purchased on-site. Payment can be made in <b>cash</b> or by <b>card</b>.</p><p>✔️ Until the festival, tickets are available online at <a href='https://afisha.md' target='_blank'>afisha.md</a>.</p>"
       },
       {
-        "question": "What time do the gates open?",
-        "answer": "Gates open at <b>16:00</b> each day. We recommend arriving early to avoid queues. <i>Last entry is at 22:00</i>."
+        "question": "Will there be toilets and a cloakroom?",
+        "answer": "<p>✔️ Yes, festival attendees will have access to <b>toilets</b> – which will be available at the Zimbru Stadium.</p><p>❌ <b>There will be no cloakroom</b>, and storage of unattended personal items will not be possible.</p>"
       },
       {
-        "question": "Is there parking available?",
-        "answer": "Yes, there are <b>two parking areas</b>:<ul><li>Main Parking (P1) - near the stadium entrance</li><li>Overflow Parking (P2) - 5 minutes walk</li></ul>Parking fee is <b>50 MDL</b> per day."
+        "question": "Will food and water be available for purchase?",
+        "answer": "<p>✔️ Yes, there will be food and beverage vendors.​</p><p>⚠️ <b>Restrictions</b>:</p><ul><li>In the <b>grass area</b> – only still water is allowed.</li><li>In the <b>stands area</b> – <b>food and drinks</b> are allowed.</li></ul>"
       },
       {
-        "question": "Are children allowed at the festival?",
-        "answer": "Yes! Children are welcome at the festival:<ul><li>Ages 0-7: Free entry</li><li>Ages 8-12: Reduced price ticket required</li><li>Ages 13+: Full price ticket required</li></ul><i>All children must be accompanied by an adult</i>."
+        "question": "How long will the festival last?",
+        "answer": "<p>✔️ <b>Open Doors</b>: 12:00 / 13:00 <i>(exact time to be announced later).</i></p><p>✔️ <b>Festival ends at</b>: 00:00 <i>(midnight)</i></p>"
       },
       {
-        "question": "What payment methods are accepted?",
-        "answer": "We accept the following payment methods:<ul><li>Credit/Debit cards</li><li>Cash (MDL only)</li><li>Mobile payments</li><li>Festival tokens</li></ul><i>Note: Some vendors may only accept festival tokens</i>."
+        "question": "Will there be parking spaces?",
+        "answer": "<p>❌ <b>No<No, there will be no designated parking spaces.</b></p><p>✔️ Attendees are advised to plan their transportation accordingly.</p>"
+      },
+      {
+        "question": "How can I get to the festival?",
+        "answer": "<p>✔️ <b>Location</b>: Zimbru Stadium, Chisinau.​</p><p>✔️ <b>Public transport options:</b></p><ul><li><b>Buses</b>: 103, 157, 19, 23, 44.​</li><li><b>Trolleybuses</b>: 22, 30, 4, 8, 17.</li></ul></p>"
+      },
+      {
+        "question": "Will there be security and medical assistance?",
+        "answer": "✔️ Yes, <b>security services</b> and <b>medical assistance</b> will be provided throughout the festival."
+      },
+      {
+        "question": "What can I bring to the festival?",
+        "answer": "<p>✔️ <b>A good mood!</b> 😃​</p><p>❌ <b>Prohibited items</b>:</p><ul><li>Food and drinks brought from outside.</li><li>Dangerous items (see festival rules).</li></ul>"
+      },
+      {
+        "question": "How can I pay for products at the festival?",
+        "answer": "✔️ All purchases at the festival can be paid for in <b>cash</b> or by <b>card</b>."
+      },
+      {
+        "question": "Will official merchendise (t-shirts, caps, etc.) be available?",
+        "answer": "✔️ Yes, <b>official festival merchandise (t-shirts, caps, accessories)</b> will be available for purchase."
+      },
+      {
+        "question": "Are there any passes for families, friends, or groups?",
+        "answer": "<p>✔️ Yes, there are <b>special packages and subscriptions</b> for groups.</p><p>✔️ <b>Prices and details</b> are available on the website and on <a href='https://afisha.md' target='_blank'>afisha.md</a>.</p>"
+      },
+      {
+        "question": "What happens if the festival is postponed?",
+        "answer": "<p>✔️ <b>If the festival is cancelled</b> – ticket refunds will be issued.</p><p>✔️ <b>If the festival is rescheduled</b> – purchased tickets will remain <b>valid</b> for the new date.</p>"
       }
     ]
   }
