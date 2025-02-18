@@ -43,7 +43,7 @@ const RulesPage = () => {
                       "cursor-default select-none",
                       "[&>h3]:text-[39px] [&>h3]:leading-[37px] [&>h3]:font-[900]",
                       "3xl:[&>h4]:!text-[36px] 3xl:![&>h4]:leading-[32px] [&>h4]:mt-8 [&>h4]:mb-3 [&>h4]:text-[28px] [&>h4]:leading-[24px] [&>h4]:font-bold lg:[&>h4]:mt-12 2xl:[&>h4]:text-[32px] 2xl:[&>h4]:leading-[28px]",
-                      "3xl:[&>p]:!text-[32px] leading-tight [&>p]:text-justify [&>p]:text-[24px] [&>p]:leading-normal 2xl:[&>p]:text-[28px] 2xl:[&>p]:leading-tight",
+                      "3xl:[&>p]:!text-[32px] leading-tight [&>p]:text-[24px] [&>p]:leading-normal sm:[&>p]:text-justify 2xl:[&>p]:text-[28px] 2xl:[&>p]:leading-tight",
                       "3xl:[&>ul]:!text-[32px] [&>ul]:list-disc [&>ul]:pl-10 [&>ul]:text-[24px] [&>ul]:leading-normal 2xl:[&>ul]:text-[28px] 2xl:[&>ul]:leading-tight"
                     )}
                     dangerouslySetInnerHTML={{ __html: slide }}
