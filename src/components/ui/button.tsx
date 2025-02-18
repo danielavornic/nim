@@ -5,14 +5,14 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center tracking-tighter cursor-pointer gap-2 font-bold uppercase  whitespace-nowrap text-[26px] duration-500 transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center select-none justify-center tracking-tighter cursor-pointer gap-2 font-bold uppercase  whitespace-nowrap text-[26px] duration-500 transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default:
-          "bg-white hover:bg-transparent text-background relative before:absolute before:-z-10 before:inset-0 before:bg-radial before:from-go-neon-green before:from-40% before:to-accent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 [&>*]:relative",
+          "bg-white hover:bg-transparent max-w-md:bg-transparent active:bg-transparent text-background relative before:absolute before:-z-10 before:inset-0 before:bg-radial before:from-go-neon-green before:from-40% before:to-accent before:opacity-0 hover:before:opacity-100 max-w-md:before:opacity-100 active:before:opacity-100 before:transition-opacity before:duration-300 [&>*]:relative",
         outline:
-          "border border-secondary bg-gradient-to-r from-go-neon-green to-secondary bg-clip-text bg-background hover:bg-clip-padding hover:bg-gradient-to-r hover:from-go-neon-green hover:to-secondary hover:text-background",
+          "border border-secondary bg-gradient-to-r from-go-neon-green to-secondary bg-clip-text bg-background hover:bg-clip-padding max-w-md:max-w-md:bg-clip-padding active:bg-clip-padding hover:bg-gradient-to-r hover:from-go-neon-green hover:to-secondary hover:text-background max-w-md:bg-gradient-to-r max-w-md:from-go-neon-green max-w-md:to-secondary max-w-md:text-background active:bg-gradient-to-r active:from-go-neon-green active:to-secondary active:text-background",
 
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         destructive: "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
@@ -20,7 +20,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline"
       },
       size: {
-        default: "h-[52px] font-[900] pt-1.5 px-[30px] px-7 text-[26px]",
+        default: "h-[52px] font-[800] leading-[18px] pt-[8.5px] px-[30px] px-7 text-[26px]",
         lg: "h-[70px] px-20 text-[33px] pt-2 tracking-tighter",
 
         sm: "h-8 px-3 text-xs",

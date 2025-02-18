@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import { type Artist } from "../types";
+import { useState } from "react";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 interface ArtistFlagProps {
   artist: Artist;
@@ -7,6 +9,9 @@ interface ArtistFlagProps {
 }
 
 function ArtistFlag({ artist, className }: ArtistFlagProps) {
+  const { width } = useWindowSize();
+  const isMobile = width && width < 1280;
+
   const getRotation = (direction: "left" | "right" | "bottom") => {
     switch (direction) {
       case "left":
@@ -38,8 +43,20 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
   };
 
   return (
-    <div className={cn("group relative h-[332px] w-[333px] transform", className)}>
-      <div className={cn("absolute inset-0 transition-transform duration-300", getRotation(artist.flag.direction))}>
+    <div
+      className={cn(
+        "group relative h-[332px] w-[333px] transform transition-all select-none hover:scale-60",
+        className
+      )}
+      role={isMobile ? "button" : undefined}
+      tabIndex={isMobile ? 0 : undefined}
+    >
+      <div
+        className={cn(
+          "absolute inset-0 transition-transform duration-300 select-none",
+          getRotation(artist.flag.direction)
+        )}
+      >
         <svg
           width="100%"
           height="100%"
@@ -55,17 +72,17 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
         </svg>
       </div>
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden select-none">
         <img
           src={artist.image}
           alt={artist.name}
-          className="h-full w-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+          className="h-full w-full object-cover transition-opacity duration-300 select-none group-hover:opacity-0 group-focus:opacity-0 group-active:opacity-0"
         />
       </div>
 
       <div
         className={cn(
-          "absolute w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100",
+          "absolute w-full opacity-0 transition-opacity duration-300 select-none group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100",
           getTextPosition(artist.text.position),
           getTextAlignment(artist.text.direction)
         )}

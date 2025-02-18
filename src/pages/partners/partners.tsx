@@ -24,7 +24,7 @@ const PartnersPage = () => {
   return (
     <section className="bg-go-neon-green text-muted-foreground min-h-[calc(90dvh-var(--header-height-mobile))] py-20 lg:min-h-[calc(90dvh-var(--header-height-desktop))] xl:py-32">
       <div className="container mx-auto px-4">
-        <h1 className="3xl:!text-8xl 4xl:!text-9xl text-center text-5xl leading-tight font-black tracking-tighter uppercase md:text-6xl xl:text-7xl">
+        <h1 className="4xl:!text-9xl text-center text-5xl leading-tight font-black tracking-tighter uppercase md:text-6xl xl:text-7xl 2xl:text-8xl">
           {t("partners.title")}
         </h1>
 

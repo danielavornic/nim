@@ -12,5 +12,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src")
     }
   },
+  server: {
+    allowedHosts: ["07d502fa160ccd.lhr.life", "c45860d1e3a345.lhr.life"]
+  },
   assetsInclude: ["**/*.woff2", "**/*.woff"]
 });

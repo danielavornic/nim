@@ -20,21 +20,25 @@ const HeroMobile = () => {
     <div>
       <Header className="bg-transparent" />
       <section className="bg-background relative min-h-[calc(100dvh-var(--header-height-mobile))] overflow-hidden pt-10 lg:min-h-[calc(100dvh-var(--header-height))]">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <h1 className="sr-only">Născut în Moldova</h1>
           <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto w-full max-w-[400px] md:hidden" />
           <img src="/nim-title.svg" alt="NIM" className="mx-auto hidden w-full max-w-[800px] md:block" />
 
-          <div className="sm:-gap-y-1 z-10 mt-16 flex cursor-default flex-col flex-wrap items-center justify-center gap-3 sm:flex-row sm:gap-x-6 lg:mx-10 lg:mt-[70px] lg:gap-x-8 xl:mx-12">
-            {ARTISTS.map((artist) => (
-              <ArtistBlock key={artist.name}>{artist.name}</ArtistBlock>
-            ))}
-            <ArtistBlock>
-              MEGA MIX <MegaMixTooltip />
-            </ArtistBlock>
-          </div>
+          <div className="flex flex-col gap-3">
+            <div className="sm:-gap-y-1 z-10 mt-16 flex cursor-default flex-col flex-wrap items-center justify-center gap-3 sm:flex-row sm:gap-x-6 lg:mx-10 lg:mt-[70px] lg:gap-x-8 xl:mx-12">
+              {ARTISTS.map((artist) => (
+                <ArtistBlock key={artist.name}>{artist.name}</ArtistBlock>
+              ))}
+            </div>
+            <div className="flex items-center justify-center">
+              <ArtistBlock>
+                MEGA MIX <MegaMixTooltip />
+              </ArtistBlock>
+            </div>
 
-          <HeroEventInfo />
+            <HeroEventInfo />
+          </div>
         </div>
 
         <div className="mt-12">

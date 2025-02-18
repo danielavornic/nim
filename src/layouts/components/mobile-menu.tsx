@@ -27,8 +27,8 @@ const MobileMenu = () => {
         </button>
       </SheetTrigger>
       <SheetContent
-        side="top"
-        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] overflow-y-auto p-0 px-4"
+        side="right"
+        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] w-screen overflow-y-auto p-0 px-4 sm:max-w-full"
         hideCloseButton
       >
         <div className="container mx-auto h-full">
@@ -47,7 +47,7 @@ const MobileMenu = () => {
             </SheetHeader>
 
             <div className="mt-12">
-              <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto w-full max-w-[400px]" />
+              <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto block w-full max-w-[400px]" />
             </div>
 
             <nav className="flex flex-1 flex-col items-center gap-7 py-12">
@@ -55,7 +55,7 @@ const MobileMenu = () => {
                 <SheetClose asChild key={link.labelCode}>
                   <LocalizedLink
                     to={link.link}
-                    className="text-foreground hover:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 hover:bg-clip-padding"
+                    className="text-foreground hover:text-background active:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 select-none hover:bg-clip-padding active:bg-clip-padding"
                   >
                     {t(link.labelCode)}
                   </LocalizedLink>
@@ -68,12 +68,15 @@ const MobileMenu = () => {
               <MobileLanguageSwitcher />
 
               <div className="xs:text-[30px] flex flex-col items-center gap-2 text-[26px] font-[900]">
-                <a href="tel:+37368300694" className="hover:text-muted block underline-offset-4 hover:underline">
+                <a
+                  href="tel:+37368300694"
+                  className="hover:text-muted active:text-muted block underline-offset-4 hover:underline active:underline"
+                >
                   (+373) 068 300 694
                 </a>
                 <a
                   href="mailto:contact@versusartist.com"
-                  className="hover:text-muted block underline-offset-8 hover:underline"
+                  className="hover:text-muted active:text-muted block underline-offset-8 hover:underline active:underline"
                 >
                   contact@versusartist.com
                 </a>

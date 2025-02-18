@@ -90,40 +90,40 @@ const LineUpSectionDesktop = () => {
           ))} */}
           <motion.div
             style={{
-              translateY: artist1Y,
-              opacity: artistOpacityRow1
+              translateY: artist1Y
+              // opacity: artistOpacityRow1
             }}
           >
             <ArtistFlag artist={ARTISTS[0]} className={cn(baseMotionClassName, "left-[5vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist2Y,
-              opacity: artistOpacityRow1
+              translateY: artist2Y
+              // opacity: artistOpacityRow1
             }}
           >
             <ArtistFlag artist={ARTISTS[1]} className={cn(baseMotionClassName, "left-[20vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist3Y,
-              opacity: artistOpacityRow1
+              translateY: artist3Y
+              // opacity: artistOpacityRow1
             }}
           >
             <ArtistFlag artist={ARTISTS[2]} className={cn(baseMotionClassName, "left-[38vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist4Y,
-              opacity: artistOpacityRow1
+              translateY: artist4Y
+              // opacity: artistOpacityRow1
             }}
           >
             <ArtistFlag artist={ARTISTS[3]} className={cn(baseMotionClassName, "left-[57vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist5Y,
-              opacity: artistOpacityRow1
+              translateY: artist5Y
+              // opacity: artistOpacityRow1
             }}
           >
             <ArtistFlag artist={ARTISTS[4]} className={cn(baseMotionClassName, "left-[72vw]")} />
@@ -131,32 +131,32 @@ const LineUpSectionDesktop = () => {
 
           <motion.div
             style={{
-              translateY: artist6Y,
-              opacity: artistOpacityRow2
+              translateY: artist6Y
+              // opacity: artistOpacityRow2
             }}
           >
             <ArtistFlag artist={ARTISTS[5]} className={cn(baseMotionClassName, "left-[2vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist7Y,
-              opacity: artistOpacityRow2
+              translateY: artist7Y
+              // opacity: artistOpacityRow2
             }}
           >
             <ArtistFlag artist={ARTISTS[6]} className={cn(baseMotionClassName, "left-[18vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist8Y,
-              opacity: artistOpacityRow2
+              translateY: artist8Y
+              // opacity: artistOpacityRow2
             }}
           >
             <ArtistFlag artist={ARTISTS[7]} className={cn(baseMotionClassName, "left-[56vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist9Y,
-              opacity: artistOpacityRow2
+              translateY: artist9Y
+              // opacity: artistOpacityRow2
             }}
           >
             <ArtistFlag artist={ARTISTS[8]} className={cn(baseMotionClassName, "left-[70vw]")} />
@@ -164,32 +164,32 @@ const LineUpSectionDesktop = () => {
 
           <motion.div
             style={{
-              translateY: artist10Y,
-              opacity: artistOpacityRow3
+              translateY: artist10Y
+              // opacity: artistOpacityRow3
             }}
           >
             <ArtistFlag artist={ARTISTS[9]} className={cn(baseMotionClassName, "left-[10vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist11Y,
-              opacity: artistOpacityRow3
+              translateY: artist11Y
+              // opacity: artistOpacityRow3
             }}
           >
             <ArtistFlag artist={ARTISTS[10]} className={cn(baseMotionClassName, "left-[25vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist12Y,
-              opacity: artistOpacityRow3
+              translateY: artist12Y
+              // opacity: artistOpacityRow3
             }}
           >
             <ArtistFlag artist={ARTISTS[11]} className={cn(baseMotionClassName, "left-[48vw]")} />
           </motion.div>
           <motion.div
             style={{
-              translateY: artist13Y,
-              opacity: artistOpacityRow3
+              translateY: artist13Y
+              // opacity: artistOpacityRow3
             }}
           >
             <ArtistFlag artist={ARTISTS[12]} className={cn(baseMotionClassName, "left-[62vw]")} />
@@ -204,8 +204,7 @@ const LineUpSection = () => {
   const { width } = useWindowSize();
   const isMobile = width && width < 1024;
 
-  return isMobile ? <LineUpSectionMobile /> : null;
-  // : <LineUpSectionDesktop />;
+  return isMobile ? <LineUpSectionMobile /> : <LineUpSectionDesktop />;
 };
 
 export default LineUpSection;

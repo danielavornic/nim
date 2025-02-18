@@ -29,12 +29,12 @@ const MobileLanguageSwitcher = ({ variant }: MobileLanguageSwitcherProps) => {
             key={lang}
             onClick={() => handleLanguageChange(lang)}
             className={cn(
-              "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full pt-[5px] text-[28px] font-[900] uppercase",
+              "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full pt-[5px] text-[28px] font-[900] uppercase select-none",
               {
                 "bg-background": variant === "footer",
-                "from-go-neon-green to-secondary text-background hover:bg-muted bg-gradient-to-r":
+                "from-go-neon-green to-secondary text-background hover:bg-muted active:bg-muted bg-gradient-to-r":
                   variant === "footer-light",
-                "bg-primary text-background hover:bg-muted": variant === "header"
+                "bg-primary text-background hover:bg-muted active:bg-muted": variant === "header"
               }
             )}
           >

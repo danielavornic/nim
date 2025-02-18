@@ -13,7 +13,7 @@ const TicketCard = ({ plan }: TicketCardProps) => {
   return (
     <div
       className={cn(
-        "mx-auto w-full max-w-[350px] rounded-[8px] bg-gradient-to-b from-transparent from-[14%] via-[57%] to-[100%]",
+        "mx-auto w-full max-w-[350px] transform rounded-[8px] bg-gradient-to-b from-transparent from-[14%] via-[57%] to-[100%] transition-all hover:scale-105 hover:drop-shadow-[0_10px_20px_-4.52px_rgba(118,198,205,0.2)] focus:scale-105 focus:drop-shadow-[0_10px_20px_-4.52px_rgba(118,198,205,0.2)] active:scale-105",
         {
           "to-go-neon-green via-muted":
             plan.category === TicketCategory.STANDARD || plan.category === TicketCategory.FAMILY,
@@ -53,7 +53,7 @@ const TicketCard = ({ plan }: TicketCardProps) => {
           </div>
           <img
             src={`/plan-${plan.category}-shadow.png`}
-            className="absolute right-0 bottom-0 left-0 z-0 h-full w-full rounded-[8px] select-none"
+            className="pointer-events-none absolute right-0 bottom-0 left-0 z-0 h-full w-full rounded-[8px] select-none"
           />
         </div>
       </div>
