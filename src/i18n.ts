@@ -23,9 +23,9 @@ i18n
       escapeValue: false
     },
     detection: {
-      order: ["path", "localStorage", "navigator"],
+      order: ["path"],
       lookupFromPathIndex: 0,
-      caches: ["localStorage"]
+      lookupFromSubdomainIndex: 0
     }
   } as const);
 
