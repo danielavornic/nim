@@ -9,7 +9,7 @@ import MegaMixTooltip from "./mega-mix-tooltip";
 
 const ArtistBlock = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="text-secondary xs:h-[40px] xs:text-[40px] relative -mt-1 flex h-9 items-start gap-1 text-center text-4xl leading-tight font-[900] whitespace-nowrap uppercase select-none lg:h-[28px] lg:text-[28px] xl:h-[2vw] xl:text-[2vw]">
+    <div className="text-secondary xs:h-[40px] xs:text-[40px] relative -mt-1 flex h-9 items-start gap-1 text-center text-4xl leading-tight font-[900] whitespace-nowrap uppercase select-none lg:h-[28px] lg:text-[28px] xl:h-[1.9vw] xl:text-[1.9vw]">
       {children}
     </div>
   );
@@ -61,7 +61,7 @@ const HeroDesktop = () => {
           <img
             src="/nim-title.svg"
             alt="NIM"
-            className="3xl:!max-w-none 4xl:!max-w-[1920px] mx-auto w-full max-w-[1000px] 2xl:max-w-[1100px]"
+            className="3xl:!max-w-[1100px] 4xl:!max-w-[1920px] mx-auto w-full max-w-[1000px] 2xl:max-w-[1100px]"
           />
 
           <div className="space-y-3">
