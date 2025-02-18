@@ -19,6 +19,7 @@ export default tseslint.config({ ignores: ["dist"] }, prettier, {
   rules: {
     ...reactHooks.configs.recommended.rules,
     "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-unused-vars": "off"
   }
 });
