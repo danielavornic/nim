@@ -28,7 +28,7 @@ const RulesPage = () => {
 
   return (
     <section className="bg-muted text-background min-h-[calc(90dvh-var(--header-height-mobile))] py-20 lg:min-h-[calc(90dvh-var(--header-height-desktop))] xl:pt-32 xl:pb-40">
-      <div className="container mx-auto max-w-5xl px-4">
+      <div className="container mx-auto px-4 lg:max-w-5xl">
         <h1 className="4xl:!text-9xl text-center text-5xl leading-tight font-black tracking-tighter uppercase md:text-6xl lg:text-left xl:text-7xl 2xl:text-8xl">
           {t("rules.title")}
         </h1>
