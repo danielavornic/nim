@@ -1,34 +1,7 @@
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Thin.otf")
-    format("opentype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-ExtraLight.otf")
-    format("opentype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Light.otf")
-    format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Regular.otf")
-    format("opentype");
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Regular.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -36,8 +9,8 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Medium.otf")
-    format("opentype");
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Medium.woff2")
+    format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,8 +18,8 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-SemiBold.otf")
-    format("opentype");
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-SemiBold.woff2")
+    format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -54,8 +27,8 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Bold.otf")
-    format("opentype");
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Bold.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -63,19 +36,36 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-ExtraBold.otf")
-    format("opentype");
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-ExtraBold.woff2")
+    format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Kommon Grotesque";
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-UltraBold.woff2")
+    format("woff2");
+  font-weight: 850;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Heavy.otf")
-    format("opentype");
+  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Black.woff2")
+    format("woff2");
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kommon Grotesque";
+  src: url("/fonts/kommon-grotesk-condensed/kommon-grotesk-con-heavy.otf")
+    format("opentype");
+  font-weight: 950;
   font-style: normal;
   font-display: swap;
 }

@@ -38,7 +38,7 @@ const MoldovaMap = forwardRef<SVGSVGElement, MoldovaMapProps>(
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         onClick={onClick}
-        className="max-h-[800px] w-[90dvh] w-auto max-w-full px-4"
+        className="max-h-[85vh] max-w-full px-4"
         viewBox="0 0 670 800"
         xmlns="http://www.w3.org/2000/svg"
       >

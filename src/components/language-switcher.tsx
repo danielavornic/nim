@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
             key={lang}
             onClick={() => handleLanguageChange(lang)}
             className={cn(
-              "hover:border-background flex h-6 w-6 items-center justify-center rounded-full border border-transparent pt-[3px] text-[16px] leading-[1] font-extrabold uppercase transition-all",
+              "hover:border-background flex h-6 w-6 items-center justify-center rounded-full border border-transparent text-[16px] leading-[16px] font-extrabold uppercase transition-all",
               { "bg-background": isActive }
             )}
           >

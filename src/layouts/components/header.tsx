@@ -49,7 +49,7 @@ const Header = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
               key={link.labelCode}
               to={link.link}
               className={cn(
-                "hover:text-muted text-secondary -mt-1 h-[32px] text-[28px] font-[800] uppercase underline-offset-8 transition-all duration-300 hover:scale-105 active:underline"
+                "hover:text-muted from-go-neon-green to-secondary line-height-[28px] bg-gradient-to-r bg-clip-text text-[28px] font-[850] uppercase underline-offset-8 transition-all duration-300 hover:scale-105 active:underline"
               )}
             >
               {t(link.labelCode)}

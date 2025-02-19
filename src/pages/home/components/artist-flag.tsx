@@ -69,11 +69,11 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
         </svg>
       </div>
 
-      <div className="absolute inset-0 overflow-hidden select-none hover:opacity-0">
+      <div className="absolute -inset-[1px] overflow-hidden select-none hover:opacity-0">
         <img
           src={artist.image}
           alt={artist.name}
-          className="h-full w-full object-cover transition-opacity duration-300 select-none group-hover:opacity-0 group-focus:opacity-0 group-active:opacity-0"
+          className="h-full w-full scale-[1.01] object-cover transition-opacity duration-300 select-none group-hover:opacity-0 group-focus:opacity-0 group-active:opacity-0"
         />
       </div>
 
@@ -86,7 +86,7 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
       >
         <h3
           className={cn(
-            "w-full text-[80px] leading-[0.75] font-[900] tracking-[-0.05em] whitespace-pre-line uppercase select-none",
+            "w-full text-[80px] leading-[0.75] font-[950] tracking-[-0.05em] whitespace-pre-line uppercase select-none",
             artist.text.className
           )}
         >

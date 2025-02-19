@@ -147,8 +147,8 @@ export const ARTISTS: Artist[] = [
     }
   },
   {
-    name: "Marej",
-    displayName: "Marej",
+    name: "Maréj",
+    displayName: "Maréj",
     image: "/artists/marej.png",
     flag: {
       direction: "right",

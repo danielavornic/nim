@@ -4,17 +4,22 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { TooltipTrigger } from "@radix-ui/react-tooltip";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const MegaMixTooltip = () => {
   const { t } = useTranslation();
   const { width } = useWindowSize();
   const isMobile = width && width < 1024;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger className="3xl:right-[-32px] absolute right-[-28px] -bottom-1 cursor-pointer lg:-top-1">
-          <div className="bg-go-blue text-background 3xl:!size-[26px] 3xl:text-xl inline-block size-[26px] rounded-full pt-1 text-[19px] font-[900] lg:size-[22px] lg:pt-0.5">
+    <TooltipProvider delayDuration={0}>
+      <Tooltip open={isOpen} onOpenChange={setIsOpen}>
+        <TooltipTrigger
+          onClick={() => setIsOpen(!isOpen)}
+          className="3xl:right-[-32px] absolute right-[-28px] -bottom-1 cursor-pointer lg:-top-1"
+        >
+          <div className="bg-go-medium-green text-background 3xl:!size-[26px] 3xl:text-xl mb:pb-1 inline-block size-[26px] rounded-full pt-1 text-[19px] font-[950] tracking-[-0.04em] md:pt-0 lg:size-[22px]">
             ?
           </div>
         </TooltipTrigger>

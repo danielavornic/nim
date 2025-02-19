@@ -31,6 +31,7 @@
   --go-blue: hsl(218 100% 50%);
   --go-dark-green: hsl(170 95% 17%);
   --go-neon-green: hsl(159 100% 49%); 
+  --go-medium-green: hsl(154 84% 45%);
 
   --border: hsl(0 0% 89.8%);
   --input: hsl(0 0% 89.8%);
@@ -107,7 +108,7 @@
   --color-go-blue: var(--go-blue);
   --color-go-dark-green: var(--go-dark-green);
   --color-go-neon-green: var(--go-neon-green);
-
+  --color-go-medium-green: var(--go-medium-green);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   @keyframes accordion-down {
     0% {
@@ -132,7 +133,31 @@
 @layer base {
   html {
     font-family: var(--default-font-family);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    -webkit-text-size-adjust: 100%;
+    font-synthesis: none; 
+    image-rendering: smooth;
+
     @apply scrollbar scrollbar-thumb-foreground scrollbar-track-background overflow-x-hidden;
+  }
+
+  /* OS-specific adjustments */
+  @supports (-webkit-appearance: none) {
+    /* macOS/iOS */
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  @supports (-ms-ime-align: auto) {
+    /* Windows */
+    body {
+      text-rendering: geometricPrecision;
+    }
   }
 
   * {

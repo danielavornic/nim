@@ -22,7 +22,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/people/N%C4%83scut-%C3%AEn-Moldova/",
+    link: "https://www.facebook.com/share/1BCxp4tnic/?mibextid=wwXIfr",
     icon: <FacebookIcon />
   },
   {

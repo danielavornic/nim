@@ -6,7 +6,7 @@ const HeroEventInfo = () => {
 
   return (
     <>
-      <p className="text-secondary z-10 mt-20 text-center text-[54px] leading-[48px] font-[900] uppercase select-none sm:text-[60px] sm:leading-[50px] lg:mt-16 lg:text-[48px] lg:leading-[40px]">
+      <p className="text-secondary z-10 mt-20 text-center text-[54px] leading-[48px] font-[950] tracking-[-0.04em] uppercase select-none sm:text-[60px] sm:leading-[50px] lg:mt-16 lg:text-[48px] lg:leading-[40px]">
         14 - 15 {t("home.hero.june")}
         <span className="hidden md:inline"> · </span>
         <br className="md:hidden" />

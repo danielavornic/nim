@@ -29,7 +29,7 @@ const MobileLanguageSwitcher = ({ variant }: MobileLanguageSwitcherProps) => {
             key={lang}
             onClick={() => handleLanguageChange(lang)}
             className={cn(
-              "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full pt-[5px] text-[28px] font-[900] uppercase select-none",
+              "flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-[28px] font-[850] tracking-[-0.05em] uppercase select-none",
               {
                 "bg-background": variant === "footer",
                 "from-go-neon-green to-secondary text-background hover:bg-muted active:bg-muted bg-gradient-to-r":

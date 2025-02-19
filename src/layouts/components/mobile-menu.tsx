@@ -13,11 +13,15 @@ import {
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { NAV_LINKS } from "./header";
+import { motion } from "framer-motion";
+import { createFadeUpVariants, containerVariants } from "@/lib/animations";
 
 const year = new Date().getFullYear();
 
 const MobileMenu = () => {
   const { t } = useTranslation();
+
+  const fadeUpVariants = createFadeUpVariants({ y: 25, duration: 0.5 });
 
   return (
     <Sheet>
@@ -28,46 +32,60 @@ const MobileMenu = () => {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] w-screen overflow-y-auto p-0 px-4 sm:max-w-full"
+        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] w-[100.5dvw] overflow-y-auto p-0 px-4 sm:max-w-full"
         hideCloseButton
+        onOpenAutoFocus={(e) => {
+          e.preventDefault();
+        }}
       >
         <div className="container mx-auto h-full">
-          <div className="flex h-full flex-col justify-between py-[28px]">
+          <motion.div
+            className="flex h-full flex-col justify-between py-[28px]"
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+          >
             <SheetHeader className="flex flex-row justify-between space-y-0">
-              <LocalizedLink to="/">
-                <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
-              </LocalizedLink>
-              <SheetClose asChild>
-                <button>
-                  <X className="from-go-neon-green to-secondary size-9 cursor-pointer bg-gradient-to-r bg-clip-text" />
-                </button>
-              </SheetClose>
+              <motion.div variants={fadeUpVariants}>
+                <LocalizedLink to="/">
+                  <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
+                </LocalizedLink>
+              </motion.div>
+              <motion.div variants={fadeUpVariants}>
+                <SheetClose asChild>
+                  <button>
+                    <X className="from-go-neon-green to-secondary size-9 cursor-pointer bg-gradient-to-r bg-clip-text" />
+                  </button>
+                </SheetClose>
+              </motion.div>
               <SheetTitle className="sr-only">NIM</SheetTitle>
               <SheetDescription className="sr-only">Mobile Menu</SheetDescription>
             </SheetHeader>
 
-            <div className="mt-12">
+            <motion.div className="mt-12" variants={fadeUpVariants}>
               <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto block w-full max-w-[400px]" />
-            </div>
+            </motion.div>
 
             <nav className="flex flex-1 flex-col items-center gap-7 py-12">
               {NAV_LINKS.map((link) => (
-                <SheetClose asChild key={link.labelCode}>
-                  <LocalizedLink
-                    to={link.link}
-                    className="text-foreground hover:text-background active:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-3 pb-2 text-center text-4xl font-[900] uppercase transition-colors duration-300 select-none hover:bg-clip-padding active:bg-clip-padding"
-                  >
-                    {t(link.labelCode)}
-                  </LocalizedLink>
-                </SheetClose>
+                <motion.div key={link.labelCode} variants={fadeUpVariants}>
+                  <SheetClose asChild>
+                    <LocalizedLink
+                      to={link.link}
+                      className="text-foreground hover:text-background active:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-2 pb-1 text-center text-4xl font-[950] uppercase transition-colors duration-300 select-none hover:bg-clip-padding active:bg-clip-padding md:pb-3"
+                    >
+                      {t(link.labelCode)}
+                    </LocalizedLink>
+                  </SheetClose>
+                </motion.div>
               ))}
             </nav>
 
-            <div className="flex flex-col items-center gap-10 p-6">
+            <motion.div className="flex flex-col items-center gap-10 p-6" variants={fadeUpVariants}>
               <Socials variant="mobile-menu" />
               <MobileLanguageSwitcher />
 
-              <div className="xs:text-[30px] flex flex-col items-center gap-2 text-[26px] font-[900]">
+              <div className="xs:text-[30px] flex flex-col items-center gap-2 text-[26px] font-[950] tracking-[-0.04em]">
                 <a
                   href="tel:+37368300694"
                   className="hover:text-muted active:text-muted block underline-offset-4 hover:underline active:underline"
@@ -81,9 +99,11 @@ const MobileMenu = () => {
                   contact@versusartist.com
                 </a>
               </div>
-            </div>
-            <p className="mx-auto mt-8 pb-[28px] text-4xl font-[900]">© {year} NIM</p>
-          </div>
+            </motion.div>
+            <motion.p className="mx-auto mt-8 pb-[28px] text-4xl font-[950]" variants={fadeUpVariants}>
+              © {year} NIM
+            </motion.p>
+          </motion.div>
         </div>
       </SheetContent>
     </Sheet>

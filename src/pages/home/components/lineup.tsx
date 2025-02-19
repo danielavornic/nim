@@ -6,30 +6,57 @@ import useLineupAnimation from "../hooks/use-lineup-animation";
 import ArtistFlag from "./artist-flag";
 import { ARTISTS, LINEUP_ARTISTS } from "../constants/artists";
 
+const fadeUpVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+};
 const LineUpSectionMobile = () => {
   return (
     <section className="bg-background py-32">
       <div className="container mx-auto px-4">
-        <h2 className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[900] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]">
+        <motion.h2
+          className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[950] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeUpVariants}
+        >
           Line
           <br className="sm:hidden" />
           Up
-        </h2>
+        </motion.h2>
+
         <div className="mt-12 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 lg:mt-20 lg:gap-16">
           {ARTISTS.map((artist, index) => (
-            <div
+            <motion.div
               key={artist.name}
               className={cn("relative flex justify-center", {
                 "md:justify-start": index % 2 === 1,
                 "md:justify-end": index % 2 === 0
               })}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+              variants={fadeUpVariants}
             >
-              <ArtistFlag
-                key={artist.name}
-                artist={artist}
-                className="max-w-lg:active:scale-[105%] hover:scale-[105%]"
-              />
-            </div>
+              <div className="w-full">
+                <ArtistFlag
+                  key={artist.name}
+                  artist={artist}
+                  className="max-w-lg:active:scale-[105%] hover:scale-[105%]"
+                />
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -70,10 +97,31 @@ const LineUpSectionDesktop = () => {
 
   const animations = useLineupAnimation(scrollYProgress, width ?? 0);
 
+  const fadeUpVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <div ref={containerRef} className="relative h-[220vh]">
       <motion.section className="bg-background sticky top-0 z-10 h-[100dvh]">
-        <motion.h2 className="1.5xl:!text-[20vw] 1.5xl:top-[55%] absolute top-[400px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[18vw] leading-[0.8] font-[900] tracking-tighter text-transparent uppercase 2xl:!text-[22vw]">
+        <motion.h2
+          className="1.5xl:!text-[20vw] 1.5xl:top-[48%] absolute top-[380px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[18vw] leading-[0.88] font-[950] text-transparent uppercase 2xl:!text-[22vw]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUpVariants}
+        >
           Line
           <br />
           Up

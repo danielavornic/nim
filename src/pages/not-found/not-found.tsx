@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     <section className="bg-muted text-background min-h-[calc(90dvh-var(--header-height-mobile))] py-20 lg:min-h-[calc(90dvh-var(--header-height-desktop))] xl:pt-32 xl:pb-40">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center text-center">
-          <h1 className="4xl:!text-9xl text-[160px] leading-tight font-black tracking-tighter uppercase lg:text-[200px] 2xl:text-[250px]">
+          <h1 className="4xl:!text-9xl text-[160px] leading-tight font-black uppercase lg:text-[200px] 2xl:text-[250px]">
             404
           </h1>
 
