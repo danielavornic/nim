@@ -7,10 +7,15 @@ import HeroEventInfo from "./hero-event-info";
 import HeroGraphics from "./hero-graphics";
 import MegaMixTooltip from "./mega-mix-tooltip";
 import { containerVariants, createFadeUpVariants } from "@/lib/animations";
-
-const ArtistBlock = ({ children }: { children: React.ReactNode }) => {
+import { cn } from "@/lib/utils";
+const ArtistBlock = ({ children, className }: { children: React.ReactNode; className?: string }) => {
   return (
-    <div className="text-secondary xs:h-[40px] xs:text-[40px] relative -mt-1 flex h-9 items-start gap-1 text-center text-4xl leading-tight font-[950] tracking-[-0.04em] whitespace-nowrap uppercase select-none lg:h-[28px] lg:text-[28px] xl:h-[1.9vw] xl:text-[1.9vw]">
+    <div
+      className={cn(
+        "text-secondary xs:h-[40px] xs:text-[40px] relative -mt-1 flex h-9 items-start gap-1 text-center text-4xl leading-tight font-[950] tracking-[-0.04em] whitespace-nowrap uppercase select-none lg:h-[28px] lg:text-[28px] xl:h-[1.9vw] xl:text-[1.9vw]",
+        className
+      )}
+    >
       {children}
     </div>
   );
@@ -44,7 +49,7 @@ const HeroMobile = () => {
                 ))}
               </div>
               <div className="flex items-center justify-center">
-                <ArtistBlock>
+                <ArtistBlock className="text-go-medium-green">
                   MEGA MIX <MegaMixTooltip />
                 </ArtistBlock>
               </div>
@@ -130,7 +135,7 @@ const HeroDesktop = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <ArtistBlock>
+              <ArtistBlock className="text-go-medium-green">
                 MEGA MIX
                 <MegaMixTooltip />
               </ArtistBlock>
