@@ -16,28 +16,8 @@ const ArtistBlock = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const HeroMobile = ({ skipAnimation }: { skipAnimation?: boolean }) => {
+const HeroMobile = () => {
   const fadeUpVariants = createFadeUpVariants({ y: 25, duration: 0.5 });
-
-  if (skipAnimation) {
-    return (
-      <div>
-        <div>
-          <Header className="bg-transparent" />
-          <section className="bg-background relative min-h-[calc(100dvh-var(--header-height-mobile))] overflow-hidden pt-10 lg:min-h-[calc(100dvh-var(--header-height))]">
-            <div className="container mx-auto px-4">
-              <h1 className="sr-only">Născut în Moldova</h1>
-              <div>
-                <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto w-full max-w-[400px] md:hidden" />
-                <img src="/nim-title.svg" alt="NIM" className="mx-auto hidden w-full max-w-[800px] md:block" />
-              </div>
-              {/* Rest of the static content */}
-            </div>
-          </section>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div>
@@ -84,32 +64,12 @@ const HeroMobile = ({ skipAnimation }: { skipAnimation?: boolean }) => {
   );
 };
 
-const HeroDesktop = ({ skipAnimation }: { skipAnimation?: boolean }) => {
+const HeroDesktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
   });
-
-  if (skipAnimation) {
-    return (
-      <div ref={containerRef} className="relative h-[calc(150dvh)]">
-        <section className="bg-background sticky top-0 z-10 h-[100dvh] overflow-hidden">
-          <Header className="bg-transparent" />
-          <div className="4xl:!pt-24 3xl:!pt-[5dvh] relative z-10 container mx-auto pt-10 xl:pt-[5dvh] 2xl:pt-[3dvh]">
-            <h1 className="sr-only">Născut în Moldova</h1>
-            <img
-              src="/nim-title.svg"
-              alt="NIM"
-              className="3xl:!max-w-[1100px] 4xl:!max-w-[1920px] mx-auto w-full max-w-[1000px] 2xl:max-w-[1100px]"
-            />
-            {/* Rest of the static content */}
-          </div>
-          <HeroGraphics scrollYProgress={scrollYProgress} />
-        </section>
-      </div>
-    );
-  }
 
   const fadeUpVariants = {
     hidden: {
@@ -190,15 +150,15 @@ const HeroDesktop = ({ skipAnimation }: { skipAnimation?: boolean }) => {
   );
 };
 
-const Hero = ({ skipAnimation }: { skipAnimation?: boolean }) => {
+const Hero = () => {
   const { width } = useWindowSize();
   const isDesktop = width && width >= 1280;
 
   if (!isDesktop) {
-    return <HeroMobile skipAnimation={skipAnimation} />;
+    return <HeroMobile />;
   }
 
-  return <HeroDesktop skipAnimation={skipAnimation} />;
+  return <HeroDesktop />;
 };
 
 export default Hero;
