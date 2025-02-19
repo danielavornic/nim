@@ -61,7 +61,7 @@ const HomePage = () => {
           "hidden opacity-0": isMapVisible && isDesktop
         })}
       >
-        <Hero key={isMapVisible ? "visible" : "hidden"} />
+        <Hero key={isMapVisible ? "visible" : "hidden"} skipAnimation={isMapVisible} />
         <AboutSection />
         <LineUpSection />
         <TicketsSection />

@@ -69,7 +69,7 @@ const RulesPage = () => {
             <motion.div className="flex flex-col items-center justify-center gap-10" variants={fadeUpVariants}>
               <div className="flex items-center justify-center gap-12 xl:gap-16">
                 <CarouselPrevious className="border-background hover:border-go-neon-green active:border-go-neon-green max-w-md:focus:border-go-neon-green static left-0 size-20 translate-x-0 translate-y-0 transform-none transition-all duration-300 md:size-24 lg:size-28 [&>svg]:size-10 md:[&>svg]:size-12 xl:[&>svg]:size-16" />
-                <div className="hidden w-0 pt-[11px] text-center text-[64px] leading-[60px] font-[950] select-none sm:block sm:w-[161px] lg:w-[200px] lg:text-[80px] lg:leading-[76px]">
+                <div className="hidden w-0 pt-[11px] text-center text-[64px] font-[900] tracking-[-0.04em] select-none sm:block sm:w-[161px] md:pt-0 lg:w-[200px] lg:text-[80px]">
                   {currentSlide + 1}/{slides.length}
                 </div>
                 <CarouselNext className="border-background hover:border-go-neon-green active:border-go-neon-green max-w-md:focus:border-go-neon-green static left-0 size-20 translate-x-0 translate-y-0 transform-none transition-all duration-300 md:size-24 lg:size-28 [&>svg]:size-10 md:[&>svg]:size-12 xl:[&>svg]:size-16" />

@@ -40,7 +40,7 @@ const MapOverlay: React.FC<MapOverlayProps> = ({ ref, isMapVisible, setIsMapVisi
 
   return (
     <div
-      className="bg-background scrollbar scrollbar-thumb-background scrollbar-track-background fixed top-0 left-0 hidden h-[100dvh] w-screen items-center justify-center overflow-y-scroll lg:flex"
+      className="bg-background scrollbar scrollbar-thumb-background scrollbar-track-background fixed top-0 left-0 z-10 hidden h-[100dvh] w-screen items-center justify-center overflow-y-scroll lg:flex"
       onClick={handleOutsideClick}
       style={{ cursor: isOverMap ? "none" : "default" }}
       ref={ref}
