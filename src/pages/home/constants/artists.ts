@@ -41,7 +41,7 @@ export const ARTISTS: Artist[] = [
     }
   },
   {
-    name: "Carla’s Dreams",
+    name: "Carla's Dreams",
     image: "/artists/csd.png",
     flag: {
       direction: "right",
@@ -174,4 +174,20 @@ export const ARTISTS: Artist[] = [
       className: "text-muted text-[65px] leading-[50px] ml-8"
     }
   }
+];
+
+export const LINEUP_ARTISTS = [
+  ARTISTS[6], // Mihail
+  ARTISTS[3], // Carla's Dreams
+  ARTISTS[0], // Irina Rimes
+  ARTISTS[4], // Satoshi
+  ARTISTS[10], // Tania Turtureanu
+  ARTISTS[9], // Dara
+  ARTISTS[2], // Zdob și Zdub
+  ARTISTS[5], // Misha Miller
+  ARTISTS[8], // The Urs
+  ARTISTS[12], // Iuliana Beregoi
+  ARTISTS[1], // Alternosfera
+  ARTISTS[7], // Magnat & Feoctist
+  ARTISTS[11] // Marej
 ];

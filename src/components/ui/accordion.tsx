@@ -26,7 +26,7 @@ const AccordionTrigger = React.forwardRef<
     >
       <svg
         width="13"
-        className="transition-all"
+        className="flex-shrink-0 transition-all"
         height="20"
         viewBox="0 0 13 20"
         fill="none"

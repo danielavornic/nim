@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import useLineupAnimation from "../hooks/use-lineup-animation";
 import ArtistFlag from "./artist-flag";
-import { ARTISTS } from "../constants/artists";
+import { ARTISTS, LINEUP_ARTISTS } from "../constants/artists";
 
 const LineUpSectionMobile = () => {
   return (
@@ -24,7 +24,11 @@ const LineUpSectionMobile = () => {
                 "md:justify-end": index % 2 === 0
               })}
             >
-              <ArtistFlag key={artist.name} artist={artist} />
+              <ArtistFlag
+                key={artist.name}
+                artist={artist}
+                className="max-w-lg:active:scale-[105%] hover:scale-[105%]"
+              />
             </div>
           ))}
         </div>
@@ -33,167 +37,60 @@ const LineUpSectionMobile = () => {
   );
 };
 
-const baseMotionClassName = "scale-[46%] 1.5xl:scale-[55%] 3xl:scale-70";
+const baseFlagClassName =
+  "scale-[45%] transition-all transform-gpu origin-center duration-300 hover:scale-[50%] 1.5xl:!scale-[56%] 1.5xl:hover:!scale-[61%] 2xl:scale-[52%] 2xl:hover:scale-[57%] 3xl:!scale-[71%] 3xl:hover:!scale-[75%] 4xl:!scale-100 4xl:hover:!scale-[105%]";
+const baseMotionClassName = "absolute transition-all ease-out";
+
+const horizontalPositionsClassNames = [
+  "left-[3.5vw] 2xl:left-[11vw] 3xl:!left-[11vw]",
+  "left-[20vw] 2xl:left-[26vw] 3xl:!left-[26vw]",
+  "left-[39vw] 3xl:!left-[40vw] 4xl:!left-[42vw]",
+  "right-[18vw] 2xl:right-[26vw] 3xl:!right-[28vw]",
+  "right-[3.5vw] 2xl:right-[12vw] 3xl:!right-[16vw] 4xl:right-[13vw]",
+
+  "left-[6.5vw] 3xl:!left-[12vw]",
+  "left-[21vw] 3xl:!left-[26vw]",
+  "right-[21vw] 3xl:!right-[24vw] 4xl:!right-[26vw]",
+  "right-[7vw] 3xl:!right-[11vw]",
+
+  "left-[10vw] 2xl:left-[18vw] 3xl:!left-[18vw]",
+  "left-[25vw] 2xl:left-[32vw] 3xl:!left-[35vw] 4xl:!left-[35vw]",
+  "right-[26vw] 2xl:right-[32vw] 3xl:!right-[32vw]",
+  "right-[12vw] 2xl:right-[18vw] 3xl:!right-[18vw]"
+];
+
 const LineUpSectionDesktop = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { width } = useWindowSize();
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
   });
 
-  const {
-    artist1Y,
-    artist2Y,
-    artist3Y,
-    artist4Y,
-    artist5Y,
-    artist6Y,
-    artist7Y,
-    artist8Y,
-    artist9Y,
-    artist10Y,
-    artist11Y,
-    artist12Y,
-    artist13Y,
-    artistOpacityRow1,
-    artistOpacityRow2,
-    artistOpacityRow3
-  } = useLineupAnimation(scrollYProgress);
+  const animations = useLineupAnimation(scrollYProgress, width ?? 0);
 
   return (
-    <div ref={containerRef} className="relative h-[calc(220dvh)]">
-      <motion.section className="bg-background sticky top-0 z-10 h-[100dvh] overflow-hidden">
-        <motion.h2
-          // style={{
-          //   scale: titleScaleValue,
-          //   opacity: titleOpacityValue
-          // }}
-          className="3xl:text-[400px] absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[280px] leading-[240px] font-[900] tracking-tighter text-transparent uppercase 2xl:leading-[320px]"
-        >
+    <div ref={containerRef} className="relative h-[220vh]">
+      <motion.section className="bg-background sticky top-0 z-10 h-[100dvh]">
+        <motion.h2 className="1.5xl:!text-[20vw] 1.5xl:top-[55%] absolute top-[400px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[18vw] leading-[0.8] font-[900] tracking-tighter text-transparent uppercase 2xl:!text-[22vw]">
           Line
           <br />
           Up
         </motion.h2>
 
-        <div className="absolute inset-0">
-          {/* {ARTISTS.map((artist, index) => (
+        <div className="relative inset-0">
+          {LINEUP_ARTISTS.map((artist, index) => (
             <motion.div
               key={artist.name}
               style={{
-                translateY: [artist1Y, artist2Y, artist3Y, artist4Y][index % 4],
-                opacity: artistOpacity
+                translateY: animations[`artist${index + 1}Y` as keyof typeof animations]
               }}
-              className="relative"
+              className={cn(baseMotionClassName, horizontalPositionsClassNames[index])}
             >
-              <ArtistFlag artist={artist} />
+              <ArtistFlag artist={artist} className={cn(baseFlagClassName)} />
             </motion.div>
-          ))} */}
-          <motion.div
-            style={{
-              translateY: artist1Y
-              // opacity: artistOpacityRow1
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[0]} className={cn(baseMotionClassName, "left-[5vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist2Y
-              // opacity: artistOpacityRow1
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[1]} className={cn(baseMotionClassName, "left-[20vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist3Y
-              // opacity: artistOpacityRow1
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[2]} className={cn(baseMotionClassName, "left-[38vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist4Y
-              // opacity: artistOpacityRow1
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[3]} className={cn(baseMotionClassName, "left-[57vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist5Y
-              // opacity: artistOpacityRow1
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[4]} className={cn(baseMotionClassName, "left-[72vw]")} />
-          </motion.div>
-
-          <motion.div
-            style={{
-              translateY: artist6Y
-              // opacity: artistOpacityRow2
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[5]} className={cn(baseMotionClassName, "left-[2vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist7Y
-              // opacity: artistOpacityRow2
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[6]} className={cn(baseMotionClassName, "left-[18vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist8Y
-              // opacity: artistOpacityRow2
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[7]} className={cn(baseMotionClassName, "left-[56vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist9Y
-              // opacity: artistOpacityRow2
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[8]} className={cn(baseMotionClassName, "left-[70vw]")} />
-          </motion.div>
-
-          <motion.div
-            style={{
-              translateY: artist10Y
-              // opacity: artistOpacityRow3
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[9]} className={cn(baseMotionClassName, "left-[10vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist11Y
-              // opacity: artistOpacityRow3
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[10]} className={cn(baseMotionClassName, "left-[25vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist12Y
-              // opacity: artistOpacityRow3
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[11]} className={cn(baseMotionClassName, "left-[48vw]")} />
-          </motion.div>
-          <motion.div
-            style={{
-              translateY: artist13Y
-              // opacity: artistOpacityRow3
-            }}
-          >
-            <ArtistFlag artist={ARTISTS[12]} className={cn(baseMotionClassName, "left-[62vw]")} />
-          </motion.div>
+          ))}
         </div>
       </motion.section>
     </div>
@@ -202,7 +99,7 @@ const LineUpSectionDesktop = () => {
 
 const LineUpSection = () => {
   const { width } = useWindowSize();
-  const isMobile = width && width < 1024;
+  const isMobile = width && width < 1280;
 
   return isMobile ? <LineUpSectionMobile /> : <LineUpSectionDesktop />;
 };

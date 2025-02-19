@@ -13,6 +13,7 @@ const HeroGraphics = ({ scrollYProgress }: { scrollYProgress: MotionValue<number
           translateX: leftLateralXValue,
           translateY: lateralYValue
         }}
+        className="transition-all duration-300"
       >
         <img src="/hero-lateral.svg" alt="Hero Lateral" className="scale-x-[-1]" />
       </motion.div>
@@ -21,6 +22,7 @@ const HeroGraphics = ({ scrollYProgress }: { scrollYProgress: MotionValue<number
           scale: nimScaleValue,
           translateY: nimRiseValue
         }}
+        className="transition-all duration-300"
       >
         <img src="/hero-nim.svg" alt="Hero NIM" className="w-[1000px]" />
       </motion.div>
@@ -30,6 +32,7 @@ const HeroGraphics = ({ scrollYProgress }: { scrollYProgress: MotionValue<number
           translateX: rightLateralXValue,
           translateY: lateralYValue
         }}
+        className="transition-all duration-300"
       >
         <img src="/hero-lateral.svg" alt="Hero Lateral" />
       </motion.div>

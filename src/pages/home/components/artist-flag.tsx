@@ -44,10 +44,7 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
 
   return (
     <div
-      className={cn(
-        "group relative h-[332px] w-[333px] transform transition-all select-none hover:scale-60",
-        className
-      )}
+      className={cn("group relative h-[332px] w-[333px] transform transition-all select-none", className)}
       role={isMobile ? "button" : undefined}
       tabIndex={isMobile ? 0 : undefined}
     >
@@ -72,7 +69,7 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
         </svg>
       </div>
 
-      <div className="absolute inset-0 overflow-hidden select-none">
+      <div className="absolute inset-0 overflow-hidden select-none hover:opacity-0">
         <img
           src={artist.image}
           alt={artist.name}
