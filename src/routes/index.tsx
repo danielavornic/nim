@@ -3,6 +3,7 @@ import RootLayout from "../layouts/root-layout";
 import HomePage from "../pages/home/home";
 import PartnersPage from "@/pages/partners/partners";
 import RulesPage from "@/pages/rules/rules";
+import NotFoundPage from "@/pages/not-found/not-found";
 
 const languages = ["en", "ro", "ru"];
 
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "rules",
         element: <RulesPage />
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />
       }
     ]
   }

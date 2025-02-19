@@ -145,5 +145,10 @@
         "answer": "<p>✔️ <b>If the festival is cancelled</b> – ticket refunds will be issued.</p><p>✔️ <b>If the festival is rescheduled</b> – purchased tickets will remain <b>valid</b> for the new date.</p>"
       }
     ]
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
   }
 }

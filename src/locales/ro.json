@@ -128,5 +128,10 @@
         "answer": "<p>✔️ <b>Dacă festivalul este anulat</b> – banii pentru bilete vor fi returnați.</p><p>✔️ <b>Dacă festivalul este reprogramat</b> – biletele deja achiziționate vor rămâne <b>valabile</b> pentru noua dată."
       }
     ]
+  },
+  "notFound": {
+    "title": "Pagina nu a fost găsită",
+    "description": "Pagina pe care o căutăm nu există sau a fost mutată.",
+    "backHome": "Înapoi la pagina principală"
   }
 }
