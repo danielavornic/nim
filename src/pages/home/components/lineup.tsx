@@ -25,7 +25,7 @@ const LineUpSectionMobile = () => {
     <section className="bg-background py-32">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[950] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]"
+          className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[950] tracking-[-0.04em] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -116,15 +116,15 @@ const LineUpSectionDesktop = () => {
     <div ref={containerRef} className="relative h-[220vh]">
       <motion.section className="bg-background sticky top-0 z-10 h-[100dvh]">
         <motion.h2
-          className="1.5xl:!text-[20vw] 1.5xl:top-[48%] absolute top-[380px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[18vw] leading-[0.88] font-[950] text-transparent uppercase 2xl:!text-[22vw]"
+          className="1.5xl:!text-[20vw] 1.5xl:top-[48%] absolute top-[380px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[18vw] leading-[0.88] font-[950] tracking-[-0.04em] text-transparent uppercase 2xl:!text-[22vw] 2xl:!leading-[0.88]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUpVariants}
         >
-          Line
-          <br />
-          Up
+          <span className="block !leading-[0.55]">Line</span>
+
+          <span className="block !leading-[0.9]">Up</span>
         </motion.h2>
 
         <div className="relative inset-0">

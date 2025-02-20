@@ -164,7 +164,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground max-xl:overflow-x-hidden overflow-hidden;
+    @apply bg-background text-foreground max-xl:overflow-hidden;
   }
 }
 

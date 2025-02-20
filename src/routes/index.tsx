@@ -1,11 +1,11 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter, Navigate, redirect } from "react-router-dom";
 import RootLayout from "../layouts/root-layout";
 import HomePage from "../pages/home/home";
 import PartnersPage from "@/pages/partners/partners";
 import RulesPage from "@/pages/rules/rules";
 import NotFoundPage from "@/pages/not-found/not-found";
 
-const languages = ["en", "ro", "ru"];
+const languages = ["ro", "en", "ru"];
 
 export const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
     element: <RootLayout />,
     loader: ({ params }) => {
       if (!languages.includes(params.lang || "")) {
-        throw new Error("Invalid language");
+        return redirect(`/ro/${params.lang}`);
       }
       return null;
     },

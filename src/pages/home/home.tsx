@@ -57,7 +57,7 @@ const HomePage = () => {
     <>
       <div
         ref={welcomeRef}
-        className={cn("min-h-screen w-full overflow-hidden", {
+        className={cn("flex min-h-screen w-full flex-col", {
           "hidden opacity-0": isMapVisible && isDesktop
         })}
       >
