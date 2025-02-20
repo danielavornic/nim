@@ -49,13 +49,13 @@ const LineUpSectionMobile = () => {
               viewport={{ once: true, margin: "-50px" }}
               variants={fadeUpVariants}
             >
-              <div className="w-full">
-                <ArtistFlag
-                  key={artist.name}
-                  artist={artist}
-                  className="max-w-lg:active:scale-[105%] hover:scale-[105%]"
-                />
-              </div>
+              {/* <div className="w-full"> */}
+              <ArtistFlag
+                key={artist.name}
+                artist={artist}
+                className="max-w-lg:active:scale-[105%] hover:scale-[105%]"
+              />
+              {/* </div> */}
             </motion.div>
           ))}
         </div>

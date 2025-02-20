@@ -45,7 +45,7 @@ const HeroMobile = () => {
           <Header className="bg-transparent" />
         </motion.div>
 
-        <motion.section className="bg-background relative min-h-[calc(100dvh-var(--header-height-mobile))] overflow-hidden pt-10 lg:min-h-[calc(100dvh-var(--header-height))]">
+        <motion.section className="bg-background relative overflow-hidden pt-10">
           <div className="container mx-auto px-4">
             <motion.h1 className="sr-only" variants={fadeUpVariants}>
               Născut în Moldova
@@ -69,6 +69,14 @@ const HeroMobile = () => {
               </div>
             </motion.div>
 
+            <motion.div variants={fadeUpVariants}>
+              {/* for the secondary artists */}
+              <div className="3xl:!mx-[120px] 4xl:!mx-[120px] 4xl:!gap-x-6 4xl:!gap-y-5 3xl:!mt-5 z-10 mt-3 flex cursor-default flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:gap-3 lg:mx-10 lg:mt-4 lg:gap-x-4 xl:mx-48 2xl:mx-[270px]">
+                {SECONDARY_ARTISTS.map((artist) => (
+                  <SecondaryArtistBlock key={artist}>{artist}</SecondaryArtistBlock>
+                ))}
+              </div>
+            </motion.div>
             <motion.div variants={fadeUpVariants}>
               <HeroEventInfo />
             </motion.div>
