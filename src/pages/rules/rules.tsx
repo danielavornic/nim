@@ -93,7 +93,7 @@ const RulesPage = () => {
                         className="border-background hover:border-go-neon-green active:border-go-neon-green max-w-md:focus:border-go-neon-green static left-0 size-20 translate-x-0 translate-y-0 transform-none transition-all duration-300 md:size-24 lg:size-28 [&>svg]:size-10 md:[&>svg]:size-12 xl:[&>svg]:size-16"
                       />
                     </div>
-                    <div className="text-[64px] leading-[60px] font-[800] sm:hidden">
+                    <div className="text-[70px] leading-[64px] font-[900] tracking-[-0.04em] sm:hidden">
                       {currentSlide + 1}/{slides.length}
                     </div>
                   </div>
