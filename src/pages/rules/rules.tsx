@@ -55,7 +55,7 @@ const RulesPage = () => {
                 <CarouselItem key={index}>
                   <div
                     className={cn(
-                      "cursor-default tracking-[-0.04em] select-none",
+                      "cursor-grab tracking-[-0.04em] select-none active:cursor-grabbing",
                       "[&>h3]:text-[39px] [&>h3]:leading-[37px] [&>h3]:font-[950]",
                       "3xl:[&>h4]:!text-[36px] 3xl:![&>h4]:leading-[32px] [&>h4]:mt-8 [&>h4]:mb-3 [&>h4]:text-[28px] [&>h4]:leading-[24px] [&>h4]:font-bold lg:[&>h4]:mt-12 2xl:[&>h4]:text-[32px] 2xl:[&>h4]:leading-[28px]",
                       "3xl:[&>p]:!text-[32px] leading-tight [&>p]:text-[24px] [&>p]:leading-normal sm:[&>p]:text-justify 2xl:[&>p]:text-[28px] 2xl:[&>p]:leading-tight",

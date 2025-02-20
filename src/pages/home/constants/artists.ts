@@ -191,3 +191,21 @@ export const LINEUP_ARTISTS = [
   ARTISTS[7], // Magnat & Feoctist
   ARTISTS[11] // Marej
 ];
+
+export const SECONDARY_ARTISTS = [
+  "Eva Timush",
+  "Cleopatra Stratan cu Pavel Stratan",
+  "Gândul Mâței",
+  "Vanotek",
+  "Sasha Lopez",
+  "SunStroke Project",
+  "Ion Suruceanu",
+  "Ian Raiburg",
+  "Lia Tăburcean",
+  "Kapushon",
+  "Akkord",
+  "Nelly Ciobanu",
+  "Catharsis",
+  "Emilian Crețu/Dora Show",
+  "Snails"
+];

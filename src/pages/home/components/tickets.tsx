@@ -34,7 +34,7 @@ const TicketsSection = () => {
               }}
               variants={createFadeUpVariants({
                 y: 50,
-                duration: 0.5,
+                duration: 0.3,
                 delay: 0.1 * index // Adds a slight delay based on card position
               })}
             >

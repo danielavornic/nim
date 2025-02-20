@@ -5,6 +5,18 @@ const HeroGraphics = ({ scrollYProgress }: { scrollYProgress: MotionValue<number
   const { leftLateralXValue, rightLateralXValue, lateralScaleValue, lateralYValue, nimRiseValue, nimScaleValue } =
     useHeroAnimation(scrollYProgress);
 
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+        delay: 1.5
+      }
+    }
+  };
+
   return (
     <div className="absolute right-0 bottom-0 left-0 z-[2] lg:flex lg:items-end lg:justify-between">
       <motion.div
@@ -14,8 +26,11 @@ const HeroGraphics = ({ scrollYProgress }: { scrollYProgress: MotionValue<number
           translateY: lateralYValue
         }}
         className="transition-all duration-300"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInVariants}
       >
-        <img src="/hero-lateral.svg" alt="Hero Lateral" className="scale-x-[-1]" />
+        <img src="/hero-lateral.png" alt="Hero Lateral" className="scale-x-[-1]" />
       </motion.div>
       <motion.div
         style={{
@@ -33,8 +48,11 @@ const HeroGraphics = ({ scrollYProgress }: { scrollYProgress: MotionValue<number
           translateY: lateralYValue
         }}
         className="transition-all duration-300"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInVariants}
       >
-        <img src="/hero-lateral.svg" alt="Hero Lateral" />
+        <img src="/hero-lateral.png" alt="Hero Lateral" />
       </motion.div>
     </div>
   );
