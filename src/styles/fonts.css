@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Regular.woff2")
-    format("woff2");
+  src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Regular.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Regular.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +10,9 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Medium.woff2")
-    format("woff2");
+  src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Medium.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Medium.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,17 +20,9 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-SemiBold.woff2")
-    format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Bold.woff2")
-    format("woff2");
+ src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Bold.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Bold.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -36,8 +30,9 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-ExtraBold.woff2")
-    format("woff2");
+  src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-ExtraBold.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-ExtraBold.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -45,8 +40,9 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-UltraBold.woff2")
-    format("woff2");
+  src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-UltraBold.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-UltraBold.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-UltraBold.ttf') format('truetype');
   font-weight: 850;
   font-style: normal;
   font-display: swap;
@@ -54,8 +50,9 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/Kommon-Grotesk-Con-Black.woff2")
-    format("woff2");
+  src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Black.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Black.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -63,8 +60,9 @@
 
 @font-face {
   font-family: "Kommon Grotesque";
-  src: url("/fonts/kommon-grotesk-condensed/kommon-grotesk-con-heavy.otf")
-    format("opentype");
+  src: url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Heavy.woff2') format('woff2'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Heavy.woff') format('woff'),
+        url('/fonts/kommon-grotesk-condensed/KommonGroteskCon-Heavy.ttf') format('truetype');
   font-weight: 950;
   font-style: normal;
   font-display: swap;

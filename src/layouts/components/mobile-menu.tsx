@@ -32,7 +32,7 @@ const MobileMenu = () => {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] w-[100.5dvw] overflow-y-auto p-0 px-4 sm:max-w-full"
+        className="bg-background scrollbar-thin scrollbar-thumb-background scrollbar-track-background h-full min-h-[100dvh] w-[100.5dvw] overflow-y-auto p-0 px-4 sm:w-screen sm:max-w-none sm:pl-10"
         hideCloseButton
         onOpenAutoFocus={(e) => {
           e.preventDefault();
@@ -48,12 +48,12 @@ const MobileMenu = () => {
             <SheetHeader className="flex flex-row justify-between space-y-0">
               <motion.div variants={fadeUpVariants}>
                 <LocalizedLink to="/">
-                  <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
+                  <img src="/images/logo.svg" alt="logo" className="h-auto w-[123px]" />
                 </LocalizedLink>
               </motion.div>
               <motion.div variants={fadeUpVariants}>
                 <SheetClose asChild>
-                  <button>
+                  <button aria-label="Close menu">
                     <X className="from-go-neon-green to-secondary size-9 cursor-pointer bg-gradient-to-r bg-clip-text" />
                   </button>
                 </SheetClose>
@@ -63,7 +63,7 @@ const MobileMenu = () => {
             </SheetHeader>
 
             <motion.div className="mt-12" variants={fadeUpVariants}>
-              <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto block w-full max-w-[400px]" />
+              <img src="/images/nim-title-vertical.svg" alt="NIM" className="mx-auto block w-full max-w-[400px]" />
             </motion.div>
 
             <nav className="flex flex-1 flex-col items-center gap-7 py-12">
@@ -72,7 +72,7 @@ const MobileMenu = () => {
                   <SheetClose asChild>
                     <LocalizedLink
                       to={link.link}
-                      className="text-foreground hover:text-background active:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 pt-2 pb-1 text-center text-4xl font-[950] uppercase transition-colors duration-300 select-none hover:bg-clip-padding active:bg-clip-padding md:pb-3"
+                      className="text-foreground hover:text-background active:text-background border-primary from-go-neon-green to-secondary block w-fit border bg-gradient-to-r bg-clip-text px-5 py-2 text-center text-4xl font-[950] uppercase transition-colors duration-300 select-none hover:bg-clip-padding active:bg-clip-padding"
                     >
                       {t(link.labelCode)}
                     </LocalizedLink>
@@ -93,10 +93,10 @@ const MobileMenu = () => {
                   (+373) 068 300 694
                 </a>
                 <a
-                  href="mailto:contact@versusartist.com"
+                  href="mailto:contact@nim.md"
                   className="hover:text-muted active:text-muted block underline-offset-8 hover:underline active:underline"
                 >
-                  contact@versusartist.com
+                  contact@nim.md
                 </a>
               </div>
             </motion.div>

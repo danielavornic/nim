@@ -31,7 +31,7 @@
   --go-blue: hsl(218 100% 50%);
   --go-dark-green: hsl(170 95% 17%);
   --go-neon-green: hsl(159 100% 49%); 
-  --go-medium-green: hsl(154 84% 45%);
+  --go-medium-green: hsl(161 87% 59%);
 
   --border: hsl(0 0% 89.8%);
   --input: hsl(0 0% 89.8%);
@@ -168,3 +168,90 @@
   }
 }
 
+
+.blurred-mask {
+  mask: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), transparent);
+  backdrop-filter: blur(12px);
+}
+
+.blurred-mask-left {
+  mask: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), transparent);
+  backdrop-filter: blur(12px);
+}
+
+/* EARLY BIRD */
+.early-bird-gradient {
+  background: linear-gradient(247.88deg, #99FF79 41.41%, #00FBA2 93.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.early-bird-gradient-text {
+  background: linear-gradient(262.7deg, #D3FDB1 21.01%, #85FC6C 92.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.early-bird-button {
+  width: 251px;
+  height: 70px;
+  background: linear-gradient(90deg, #0C9E52 0%, #072A1C 42.5%);
+  border: 3px solid #64F06B;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.early-bird-button:hover,
+.early-bird-button:focus,
+.early-bird-button:active {
+  opacity: 0.8;
+  /* background: linear-gradient(90deg, #0FBF63 0%, #0A3B27 42.5%);
+  border-color: #91FF72;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(100, 240, 107, 0.4); */
+}
+
+/* .early-bird-button:active {
+  transform: translateY(1px);
+}
+
+.early-bird-button::after {
+  content: '';
+  position: absolute;
+  transform: scale(100%);
+  inset: -3px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #91FF72, #64F06B);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.early-bird-button:hover::after,
+.early-bird-button:focus::after {
+  opacity: 0.4;
+} */
+
+.early-bird-button-text {
+  background: linear-gradient(262.7deg, #91FF72 21.01%, #85FC6C 92.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: filter 0.3s ease;
+}
+
+/* .early-bird-button:hover .early-bird-button-text,
+.early-bird-button:focus .early-bird-button-text {
+  background: linear-gradient(262.7deg, #0A3B27 21.01%, #0A3B27 92.47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(145, 255, 114, 0.5));
+} */

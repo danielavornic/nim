@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Romanian -->
+  <url>
+    <loc>https://nim.md/ro</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nim.md/ro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nim.md/en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nim.md/ru"/>
+  </url>
+  <url>
+    <loc>https://nim.md/ro/rules</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nim.md/ro/rules"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nim.md/en/rules"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nim.md/ru/rules"/>
+  </url>
+  <url>
+    <loc>https://nim.md/ro/partners</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nim.md/ro/partners"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nim.md/en/partners"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nim.md/ru/partners"/>
+  </url>
+  <!-- English -->
+  <url>
+    <loc>https://nim.md/en</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nim.md/ro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nim.md/en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nim.md/ru"/>
+  </url>
+  <!-- Russian -->
+  <url>
+    <loc>https://nim.md/ru</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://nim.md/ro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nim.md/en"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nim.md/ru"/>
+  </url>
+</urlset> 

@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { LINEUP_ARTISTS, MOBILE_LINEUP_ARTISTS } from "../constants/artists";
 import useLineupAnimation from "../hooks/use-lineup-animation";
 import ArtistFlag from "./artist-flag";
-import { ARTISTS, LINEUP_ARTISTS } from "../constants/artists";
 
 const fadeUpVariants = {
   hidden: {
@@ -25,7 +25,7 @@ const LineUpSectionMobile = () => {
     <section className="bg-background py-32">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[136px] font-[950] tracking-[-0.04em] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]"
+          className="bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[180px] leading-[0.85] font-[950] tracking-[-0.04em] text-transparent uppercase sm:leading-[158px] lg:text-[220px] lg:leading-[200px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -36,8 +36,8 @@ const LineUpSectionMobile = () => {
           Up
         </motion.h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 lg:mt-20 lg:gap-16">
-          {ARTISTS.map((artist, index) => (
+        <div className="mt-12 grid grid-cols-2 gap-5 md:mt-16 md:gap-6 lg:mt-20 lg:gap-16">
+          {MOBILE_LINEUP_ARTISTS.map((artist, index) => (
             <motion.div
               key={artist.name}
               className={cn("relative flex justify-center", {
@@ -71,19 +71,20 @@ const baseMotionClassName = "absolute transition-all ease-out";
 const horizontalPositionsClassNames = [
   "left-[3.5vw] 2xl:left-[11vw] 3xl:!left-[11vw]",
   "left-[20vw] 2xl:left-[26vw] 3xl:!left-[26vw]",
-  "left-[39vw] 3xl:!left-[40vw] 4xl:!left-[42vw]",
-  "right-[18vw] 2xl:right-[26vw] 3xl:!right-[28vw]",
-  "right-[3.5vw] 2xl:right-[12vw] 3xl:!right-[16vw] 4xl:right-[13vw]",
+  "left-[39vw] 3xl:!left-[40vw] 4xl:!left-[41vw]",
+  "right-[18vw] 2xl:right-[26vw] 3xl:!right-[25vw]",
+  "right-[3.5vw] 2xl:right-[12vw] 3xl:!right-[10vw] 4xl:right-[13vw]",
 
-  "left-[6.5vw] 3xl:!left-[12vw]",
-  "left-[21vw] 3xl:!left-[26vw]",
-  "right-[21vw] 3xl:!right-[24vw] 4xl:!right-[26vw]",
-  "right-[7vw] 3xl:!right-[11vw]",
+  "left-[6.5vw] 3xl:!left-[8vw]",
+  "left-[21vw] 3xl:!left-[22vw]",
+  "right-[16vw] 3xl:!right-[22vw] 4xl:!right-[26vw]",
+  "right-[3vw] 3xl:!right-[7vw]",
 
-  "left-[10vw] 2xl:left-[18vw] 3xl:!left-[18vw]",
-  "left-[25vw] 2xl:left-[32vw] 3xl:!left-[35vw] 4xl:!left-[35vw]",
-  "right-[26vw] 2xl:right-[32vw] 3xl:!right-[32vw]",
-  "right-[12vw] 2xl:right-[18vw] 3xl:!right-[18vw]"
+  "left-[8vw] 2xl:left-[14vw] 3xl:!left-[12vw]",
+  "left-[24vw] 2xl:left-[28vw] 3xl:!left-[28vw] 4xl:!left-[35vw]",
+  "right-[35vw] 2xl:right-[35vw] 3xl:!right-[40vw]",
+  "right-[19vw] 2xl:right-[20vw] 3xl:!right-[25vw]",
+  "right-[2.5vw] 2xl:right-[3.5vw] 3xl:!right-[9vw]"
 ];
 
 const LineUpSectionDesktop = () => {
@@ -116,15 +117,14 @@ const LineUpSectionDesktop = () => {
     <div ref={containerRef} className="relative h-[220vh]">
       <motion.section className="bg-background sticky top-0 z-10 h-[100dvh]">
         <motion.h2
-          className="1.5xl:!text-[20vw] 1.5xl:top-[48%] absolute top-[380px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[18vw] leading-[0.88] font-[950] tracking-[-0.04em] text-transparent uppercase 2xl:!text-[22vw] 2xl:!leading-[0.88]"
+          className="1.5xl:!text-[20vw] 1.5xl:top-[48%] absolute top-[380px] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[linear-gradient(180deg,#00FBA2_0%,#00FBA2_18%,#8CFF6D_31%,#00FBA2_49%,#00FBA2_83%)] bg-clip-text text-center text-[20vw] font-[950] tracking-[-0.04em] text-transparent uppercase 2xl:!text-[22vw] 2xl:!leading-[0.88]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUpVariants}
         >
-          <span className="block !leading-[0.55]">Line</span>
-
-          <span className="block !leading-[0.9]">Up</span>
+          <span className="block leading-[0.85]">Line</span>
+          <span className="-mt-5 block leading-[0.85] 2xl:-mt-12">Up</span>
         </motion.h2>
 
         <div className="relative inset-0">

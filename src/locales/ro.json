@@ -8,18 +8,20 @@
   },
   "home": {
     "hero": {
-      "zimbru_stadium": "St. Zimbru",
+      "zimbru_stadium": "Stadionul Zimbru",
       "june": "Iunie",
       "megamix_description": " Cele mai mari hituri Născute în Moldova din ultimii 25 de ani. \n Mega Mix — o oră în care melodiile legendare vor fi readuse în lumina reflectoarelor prin interpretări live ale artiștilor prezenți pe scenă sau prin prestații digitale inovatoare.",
+      "megamix_lineup": "Imaginează-ți cântând pe aceeași scenă artiștii hiturilor noastre.\n Rămâi cu noi. Curând le anunțăm numele.",
       "info_tickets": "Info Bilete"
     },
     "about": {
       "title": "Despre Festival",
-      "description": "Iubești Moldova? Nu ești singur! Ești de-al Nostru. \n\nNăscut în Moldova este Festivalul Muzicii Noastre. \nScopul acestuia este să inspire oamenii să iubească Moldova. \nIndiferent de etnie, limbă, confesiune, gen sau vârstă, pe oamenii noștri îi unește o simțire a casei și o formare comună."
+      "description": "Iubești Moldova? Nu ești singur! Ești de-al Nostru. \n\nHai cu noi la unicul festival de pe Stadionul Zimbru:\n Născut în Moldova, Festivalul Muzicii Noastre. \nTe invităm să cântăm și să ne bucurăm împreună de tot ce e al nostru. Să ne mândrim și să iubim tot ce e Născut în Moldova. \n\nFii parte din istoria noastră | 14-15 Iunie | Stadionul Zimbru"
     }
   },
   "partners": {
-    "title": "Parteneri"
+    "title": "Parteneri",
+    "organizer": "Organizator"
   },
   "rules": {
     "title": "Regulament",
@@ -46,11 +48,18 @@
   "meta": {
     "home": {
       "title": "Născut în Moldova Festival",
-      "description": "Născut în Moldova este Festivalul Muzicii Noastre. Scopul acestuia este să inspire oamenii să iubească Moldova. Indiferent de etnie, limbă, confesiune, gen sau vârstă, pe oamenii noștri îi unește o simțire a casei și o formare comună."
+      "description": "Născut în Moldova este Festivalul Muzicii Noastre. Scopul acestuia este să inspire oamenii să iubească Moldova. Indiferent de etnie, limbă, confesiune, gen sau vârstă, pe oamenii noștri îi unește o simțire a casei și o formare comună.",
+      "keywords": "nim, născut în moldova, festival, concert, muzică, 2025, carla's dreams, irina rimes, satoshi, alternosfera"
     },
     "partners": {
       "title": "Parteneri",
-      "description": "Partenerii festivalului Născut în Moldova"
+      "description": "Partenerii festivalului Născut în Moldova",
+      "keywords": "nim, parteneri, născut în moldova, festival, concert, muzică, 2025"
+    },
+    "rules": {
+      "title": "Regulament",
+      "description": "Regulamentul festivalului Născut în Moldova",
+      "keywords": "nim, regulament, născut în moldova, festival, concert, muzică, 2025"
     }
   },
   "tickets": {
@@ -71,6 +80,13 @@
       "friends": {
         "title": "Friends",
         "description": "6 persoane"
+      },
+      "early-bird": {
+        "title": "Early Bird",
+        "description": "Prinde Prețul Bun",
+        "days": "2 ZILE",
+        "for": "LA",
+        "price": "500 MDL"
       }
     },
     "buy": "Cumpără Bilet",
@@ -117,15 +133,11 @@
       },
       {
         "question": "Va exista merch oficial (tricouri, chipiuri etc.)?",
-        "answer": "✔️ Da, vor fi disponibile produse oficiale de festival <i>(tricouri, chipiuri, accesorii)</i>."
+        "answer": "✔️ Da, vor fi disponibile produsele oficiale ale festivalului."
       },
       {
         "question": "Există abonamente pentru familie, prieteni sau grupuri?",
         "answer": "<p>✔️ Da, există <b>pachete speciale și abonamente</b> pentru grupuri.</p><p>✔️ <b>Prețurile și detaliile</b> sunt disponibile pe site și pe <a href='https://afisha.md' target='_blank'>afisha.md</a>."
-      },
-      {
-        "question": "Ce se întâmplă dacă festivalul se amână?",
-        "answer": "<p>✔️ <b>Dacă festivalul este anulat</b> – banii pentru bilete vor fi returnați.</p><p>✔️ <b>Dacă festivalul este reprogramat</b> – biletele deja achiziționate vor rămâne <b>valabile</b> pentru noua dată."
       }
     ]
   },

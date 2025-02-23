@@ -52,7 +52,8 @@ const TicketCard = ({ plan }: TicketCardProps) => {
             </Button>
           </div>
           <img
-            src={`/plan-${plan.category}-shadow.png`}
+            src={`/images/plan-${plan.category}-shadow.png`}
+            alt={`Plan ${plan.category} shadow`}
             className="pointer-events-none absolute right-0 bottom-0 left-0 z-0 h-full w-full rounded-[8px] select-none"
           />
         </div>

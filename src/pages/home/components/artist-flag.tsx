@@ -12,7 +12,7 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
   const { width } = useWindowSize();
   const isMobile = width && width < 1280;
 
-  const getRotation = (direction: "left" | "right" | "bottom") => {
+  const getRotation = (direction: "left" | "right" | "bottom" | "top") => {
     switch (direction) {
       case "left":
         return "rotate-0";
@@ -20,6 +20,8 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
         return "rotate-180";
       case "bottom":
         return "-rotate-90";
+      case "top":
+        return "rotate-90";
       default:
         return "rotate-0";
     }
@@ -30,11 +32,11 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
       case "top":
         return "top-5 left-5";
       case "bottom":
-        return "bottom-2 left-1/2 -translate-x-1/2";
+        return "bottom-0 sm:bottom-2 md:bottom-5 left-1/2 -translate-x-1/2";
       case "center":
         return "top-[45%] -translate-y-1/2 left-1/2 -translate-x-1/2";
       default:
-        return "top-2";
+        return "top-5";
     }
   };
 
@@ -44,7 +46,10 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
 
   return (
     <div
-      className={cn("group relative h-[332px] w-[333px] transform transition-all select-none", className)}
+      className={cn(
+        "group relative h-[35vw] w-[35vw] transform overflow-hidden transition-all select-none md:h-[332px] md:w-[333px]",
+        className
+      )}
       role={isMobile ? "button" : undefined}
       tabIndex={isMobile ? 0 : undefined}
     >
@@ -73,7 +78,7 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
         <img
           src={artist.image}
           alt={artist.name}
-          className="h-full w-full scale-[1.01] object-cover transition-opacity duration-300 select-none group-hover:opacity-0 group-focus:opacity-0 group-active:opacity-0"
+          className="h-full w-full object-cover transition-opacity duration-300 select-none group-hover:opacity-0 group-focus:opacity-0 group-active:opacity-0 lg:scale-[1.01]"
         />
       </div>
 
@@ -86,7 +91,7 @@ function ArtistFlag({ artist, className }: ArtistFlagProps) {
       >
         <h3
           className={cn(
-            "w-full text-[80px] leading-[0.75] font-[950] tracking-[-0.05em] whitespace-pre-line uppercase select-none",
+            "w-full scale-[45%] transform text-[80px] leading-[0.75] font-[950] tracking-[-0.05em] whitespace-pre-line uppercase select-none sm:scale-80 md:scale-100",
             artist.text.className
           )}
         >

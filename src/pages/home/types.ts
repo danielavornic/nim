@@ -3,7 +3,7 @@ export interface Artist {
   displayName?: string;
   image: string;
   flag: {
-    direction: "left" | "right" | "bottom";
+    direction: "left" | "right" | "bottom" | "top";
     className?: string;
   };
   text: {
@@ -27,5 +27,4 @@ export enum TicketDuration {
 export interface TicketPlan {
   category: TicketCategory;
   duration: TicketDuration;
-  className: string;
 }

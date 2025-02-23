@@ -41,7 +41,7 @@ const Socials = ({ variant = "header" }: SocialsProps) => {
       })}
     >
       {SOCIAL_LINKS.map((social) => (
-        <a href={social.link} key={social.name}>
+        <a href={social.link} key={social.name} title={social.name}>
           {React.cloneElement(social.icon as React.ReactElement<{ className?: string }>, {
             className: cn("size-5 hover:rotate-12 active:rotate-12 transition-transform duration-300", {
               "text-background size-12": variant === "footer",

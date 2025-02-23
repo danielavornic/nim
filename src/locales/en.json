@@ -8,9 +8,11 @@
   },
   "home": {
     "hero": {
-      "zimbru_stadium": "ST. ZIMBRU",
+      "zimbru_stadium": "ZIMBRU STADIUM",
       "june": "JUNE",
+
       "megamix_description": "The biggest hits Born in Moldova from the last 25 years. \nMega Mix — an hour where legendary songs will be brought back into the spotlight through live performances by artists on stage or through innovative digital showcases.",
+      "megamix_lineup": "Imagine yourself singing on the same stage as our hits artists.\n Stay with us. We will announce the names soon.",
       "info_tickets": "Info Tickets"
     },
     "about": {
@@ -20,7 +22,8 @@
   },
   "partners": {
     "title": "Partners",
-    "description": "Partners of the Born in Moldova Festival"
+    "description": "Partners of the Born in Moldova Festival",
+    "organizer": "Organizer"
   },
   "rules": {
     "title": "Rules",
@@ -63,11 +66,18 @@
   "meta": {
     "home": {
       "title": "Născut în Moldova Festival",
-      "description": "Născut în Moldova is the Festival of Our Music. Its purpose is to inspire people to love Moldova. Regardless of ethnicity, language, religion, gender or age, our people are united by a sense of home and common formation."
+      "description": "Născut în Moldova is the Festival of Our Music. Its purpose is to inspire people to love Moldova. Regardless of ethnicity, language, religion, gender or age, our people are united by a sense of home and common formation.",
+      "keywords": "nim, născut în moldova, festival, muzică, 2025, carla's dreams, irina rimes, satoshi, alternosfera"
     },
     "partners": {
       "title": "Partners",
-      "description": "Partners of the Born in Moldova Festival"
+      "description": "Partners of the Born in Moldova Festival",
+      "keywords": "nim, parteneri, născut în moldova, festival, muzică, 2025"
+    },
+    "rules": {
+      "title": "Rules",
+      "description": "Rules of the Born in Moldova Festival",
+      "keywords": "nim, regulament, născut în moldova, festival, muzică, 2025"
     }
   },
   "tickets": {
@@ -88,6 +98,13 @@
       "friends": {
         "title": "Friends",
         "description": "6 people"
+      },
+      "early-bird": {
+        "title": "Early Bird",
+        "description": "Catch the Good Price",
+        "days": "2 DAYS",
+        "for": "FOR",
+        "price": "500 MDL"
       }
     },
     "buy": "Buy Ticket",
@@ -134,7 +151,7 @@
       },
       {
         "question": "Will official merchendise (t-shirts, caps, etc.) be available?",
-        "answer": "✔️ Yes, <b>official festival merchandise (t-shirts, caps, accessories)</b> will be available for purchase."
+        "answer": "✔️ Yes, <b>official festival merchandise</b> will be available for purchase."
       },
       {
         "question": "Are there any passes for families, friends, or groups?",

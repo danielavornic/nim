@@ -36,7 +36,7 @@ const Header = ({ className }: React.HTMLAttributes<HTMLDivElement>) => {
     >
       <div className="3xl:!w-full container flex items-center justify-between px-4 lg:justify-center xl:w-auto">
         <LocalizedLink to="/">
-          <img src="/logo.svg" alt="logo" className="h-auto w-[123px]" />
+          <img src="/images/logo.svg" alt="logo" className="h-auto w-[123px]" />
         </LocalizedLink>
         <MobileMenu />
       </div>

@@ -27,7 +27,6 @@ const MoldovaMap = forwardRef<SVGSVGElement, MoldovaMapProps>(
     return (
       <svg
         ref={(el) => {
-          // Handle both refs
           if (typeof ref === "function") {
             ref(el);
           } else if (ref) {
@@ -38,7 +37,7 @@ const MoldovaMap = forwardRef<SVGSVGElement, MoldovaMapProps>(
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         onClick={onClick}
-        className="max-h-[85vh] max-w-full px-4"
+        className="4xl:h-[70dvh] 4xl:w-[calc(70dvh*0.8375)] h-[80dvh] w-[calc(80dvh*0.8375)] min-w-[500px]"
         viewBox="0 0 670 800"
         xmlns="http://www.w3.org/2000/svg"
       >

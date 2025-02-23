@@ -39,13 +39,13 @@ const useLineupAnimation = (scrollYProgress: MotionValue<number>, width: number)
     artist6Y: useTransform(scrollYProgress, [0.35, 0.55], [initialY, getMiddleFinalY(55)]),
     artist7Y: useTransform(scrollYProgress, [0.4, 0.6], [initialY, getMiddleFinalY(60)]),
     artist8Y: useTransform(scrollYProgress, [0.45, 0.65], [initialY, getMiddleFinalY(65)]),
-    artist9Y: useTransform(scrollYProgress, [0.5, 0.7], [initialY, getMiddleFinalY(60)]),
+    artist9Y: useTransform(scrollYProgress, [0.5, 0.7], [initialY, getMiddleFinalY(55)]),
 
     artist10Y: useTransform(scrollYProgress, [0.55, 0.75], [initialY, getBottomFinalY(110)]),
     artist11Y: useTransform(scrollYProgress, [0.6, 0.8], [initialY, getBottomFinalY(120)]),
-    artist12Y: useTransform(scrollYProgress, [0.65, 0.85], [initialY, getBottomFinalY(128)]),
-    artist13Y: useTransform(scrollYProgress, [0.7, 0.9], [initialY, getBottomFinalY(105)]),
-    // Add more artists as needed
+    artist12Y: useTransform(scrollYProgress, [0.65, 0.85], [initialY, getBottomFinalY(130)]),
+    artist13Y: useTransform(scrollYProgress, [0.7, 0.9], [initialY, getBottomFinalY(115)]),
+    artist14Y: useTransform(scrollYProgress, [0.75, 0.95], [initialY, getBottomFinalY(107)]),
 
     // Artist opacity animations
     artist1Opacity: useTransform(scrollYProgress, [0.1, 0.4], [0, 1]),
@@ -60,7 +60,8 @@ const useLineupAnimation = (scrollYProgress: MotionValue<number>, width: number)
     artist10Opacity: useTransform(scrollYProgress, [0.9, 1], [0, 1]),
     artist11Opacity: useTransform(scrollYProgress, [0.9, 1], [0, 1]),
     artist12Opacity: useTransform(scrollYProgress, [0.9, 1], [0, 1]),
-    artist13Opacity: useTransform(scrollYProgress, [0.9, 1], [0, 1])
+    artist13Opacity: useTransform(scrollYProgress, [0.9, 1], [0, 1]),
+    artist14Opacity: useTransform(scrollYProgress, [0.9, 1], [0, 1])
   };
 };
 

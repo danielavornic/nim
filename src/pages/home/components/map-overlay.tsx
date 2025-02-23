@@ -46,13 +46,20 @@ const MapOverlay: React.FC<MapOverlayProps> = ({ ref, isMapVisible, setIsMapVisi
       ref={ref}
     >
       <PinCursor x={cursorPosition.x} y={cursorPosition.y} isVisible={isOverMap} />
-      <MoldovaMap
-        ref={mapRef}
-        onMouseEnter={handleMapMouseEnter}
-        onMouseLeave={handleMapMouseLeave}
-        onClick={handleMapClick}
-        isOpen={isMapVisible}
-      />
+      <div className="flex items-center">
+        <img
+          src="/images/nascut-in.svg"
+          alt="Născut în Moldova"
+          className="3xl:!w-[350px] 1.5xl:w-[300px] 4xl:-mr-24 -mr-20 w-[280px]"
+        />
+        <MoldovaMap
+          ref={mapRef}
+          onMouseEnter={handleMapMouseEnter}
+          onMouseLeave={handleMapMouseLeave}
+          onClick={handleMapClick}
+          isOpen={isMapVisible}
+        />
+      </div>
     </div>
   );
 };

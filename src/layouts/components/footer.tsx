@@ -48,13 +48,21 @@ const Footer = ({ variant = "light" }: FooterProps) => {
           >
             {isDark ? (
               <>
-                <img src="/nim-title-vertical-black.svg" alt="NIM" className="mx-auto w-full max-w-[400px] md:hidden" />
-                <img src="/nim-title-black.svg" alt="NIM" className="hidden w-full md:block" />
+                <img
+                  src="/images/nim-title-vertical-black.svg"
+                  alt="NIM"
+                  className="mx-auto w-full max-w-[400px] md:hidden"
+                />
+                <img src="/images/nim-title-black.svg" alt="NIM" className="hidden w-full md:block" />
               </>
             ) : (
               <>
-                <img src="/nim-title-vertical.svg" alt="NIM" className="mx-auto w-full max-w-[400px] md:hidden" />
-                <img src="/nim-title.svg" alt="NIM" className="hidden w-full md:block" />
+                <img
+                  src="/images/nim-title-vertical.svg"
+                  alt="NIM"
+                  className="mx-auto w-full max-w-[400px] md:hidden"
+                />
+                <img src="/images/nim-title.svg" alt="NIM" className="hidden w-full md:block" />
               </>
             )}
           </motion.div>
@@ -99,10 +107,10 @@ const Footer = ({ variant = "light" }: FooterProps) => {
                   (+373) 068 300 694
                 </a>
                 <a
-                  href="mailto:contact@versusartist.com"
+                  href="mailto:contact@nim.md"
                   className="block underline-offset-8 transition-all duration-300 hover:underline focus:underline active:underline"
                 >
-                  contact@versusartist.com
+                  contact@nim.md
                 </a>
               </div>
               <p className="mx-auto mt-8 text-4xl font-[950] tracking-[-0.04em] md:mx-0">© {year} NIM</p>

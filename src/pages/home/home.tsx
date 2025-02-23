@@ -1,4 +1,4 @@
-import { useMeta } from "@/hooks/use-meta";
+import { SEO } from "@/components/seo";
 import { cn } from "@/lib/utils";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useEffect, useRef, useState } from "react";
@@ -51,10 +51,9 @@ const HomePage = () => {
     }
   }, []);
 
-  useMeta("home");
-
   return (
     <>
+      <SEO />
       <div
         ref={welcomeRef}
         className={cn("flex min-h-screen w-full flex-col", {
