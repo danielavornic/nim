@@ -12,7 +12,7 @@ const ArtistBlock = ({ children, className }: { children: React.ReactNode; class
   return (
     <div
       className={cn(
-        "text-secondary 1.5xl:!text-[32px] 4xl:!text-[60px] 3xl:!text-[48px] relative flex h-9 items-start gap-1 text-center text-[40px] leading-tight font-[900] tracking-[-0.04em] whitespace-nowrap uppercase select-none lg:text-[40px] xl:text-[27px] 2xl:text-[30px]",
+        "text-secondary 1.5xl:!text-[32px] 4xl:!text-[60px] 3xl:!text-[48px] relative flex items-start gap-1 text-center text-[40px] leading-[1.1] font-[900] tracking-[-0.04em] whitespace-normal uppercase select-none lg:text-[40px] xl:text-[27px] 2xl:text-[30px]",
         className
       )}
     >
@@ -46,7 +46,10 @@ const HeroMobile = () => {
             <motion.div className="flex flex-col gap-3" variants={fadeUpVariants}>
               <div className="sm:-gap-y-1 z-10 mt-16 flex cursor-default flex-col flex-wrap items-center justify-center gap-3 sm:flex-row sm:gap-x-6 lg:mx-10 lg:mt-[70px] lg:gap-x-8 xl:mx-12">
                 {HERO_ARTISTS.map((artist) => (
-                  <ArtistBlock key={artist.name}>{artist.name}</ArtistBlock>
+                  <ArtistBlock key={artist.name}>
+                    {artist.name}
+                    {artist.name === "Zdob și Zdub" && " și Frații Advahov"}
+                  </ArtistBlock>
                 ))}
               </div>
               <div className="mt-[30px] flex flex-col items-center">
