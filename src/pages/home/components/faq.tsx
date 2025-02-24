@@ -13,10 +13,10 @@ const FAQ = () => {
   const fadeUpVariants = createFadeUpVariants({ y: 50 });
 
   return (
-    <section className="bg-background pb-32 lg:px-4 lg:pt-32 lg:pb-40 xl:px-0">
+    <section className="bg-background pb-32 lg:px-4 lg:pt-28 lg:pb-40 xl:px-0">
       <div id="faq" className="container mx-auto max-w-[77rem] px-4">
         <motion.h2
-          className="from-go-neon-green to-accent 3xl:!text-[120px] bg-linear-20 to-50% bg-clip-text text-center text-[90px] font-[800] tracking-[-0.04em] text-transparent uppercase lg:text-left lg:text-[100px] 2xl:text-[110px]"
+          className="3xl:!text-[120px] faq-title text-center text-[90px] font-[800] tracking-[-0.04em] text-transparent uppercase lg:text-[100px] 2xl:text-[110px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -25,7 +25,7 @@ const FAQ = () => {
           FAQ
         </motion.h2>
 
-        <Accordion type="single" collapsible className="mt-0">
+        <Accordion type="single" collapsible className="mt-[50px] lg:mt-[70px]">
           {faqItems.map((item, index) => (
             <motion.div
               key={index}

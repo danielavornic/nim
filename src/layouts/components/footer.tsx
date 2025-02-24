@@ -100,12 +100,12 @@ const Footer = ({ variant = "light" }: FooterProps) => {
               variants={fadeUpVariants}
             >
               <div className="xs:text-[30px] flex flex-col items-center gap-2 text-[26px] leading-tight font-[950] tracking-[-0.04em] md:items-start md:gap-0.5">
-                <a
+                {/* <a
                   href="tel:+37368300694"
                   className="block underline-offset-8 transition-all duration-300 hover:underline focus:underline active:underline"
                 >
                   (+373) 068 300 694
-                </a>
+                </a> */}
                 <a
                   href="mailto:contact@nim.md"
                   className="block underline-offset-8 transition-all duration-300 hover:underline focus:underline active:underline"

@@ -5,7 +5,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import { motion, useScroll } from "framer-motion";
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { ARTISTS, HERO_ARTISTS } from "../constants/artists";
+import { HERO_ARTISTS } from "../constants/artists";
 import HeroEventInfo from "./hero-event-info";
 import HeroGraphics from "./hero-graphics";
 const ArtistBlock = ({ children, className }: { children: React.ReactNode; className?: string }) => {
@@ -46,10 +46,7 @@ const HeroMobile = () => {
             <motion.div className="flex flex-col gap-3" variants={fadeUpVariants}>
               <div className="sm:-gap-y-1 z-10 mt-16 flex cursor-default flex-col flex-wrap items-center justify-center gap-3 sm:flex-row sm:gap-x-6 lg:mx-10 lg:mt-[70px] lg:gap-x-8 xl:mx-12">
                 {HERO_ARTISTS.map((artist) => (
-                  <ArtistBlock key={artist.name}>
-                    {artist.name}
-                    {artist.name === "Zdob și Zdub" && " și Frații Advahov"}
-                  </ArtistBlock>
+                  <ArtistBlock key={artist.name}>{artist.name}</ArtistBlock>
                 ))}
               </div>
               <div className="mt-[30px] flex flex-col items-center">
@@ -139,18 +136,15 @@ const HeroDesktop = () => {
           />
 
           <motion.div className="space-y-3" variants={fadeUpVariants}>
-            <div className="sm:-gap-y-1 4xl:!mt-20 4xl:!mx-0 4xl:!gap-y-8 3xl:!gap-y-6 3xl:!mx-[20px] 1.5xl:!mx-[80px] 1.5xl:!gap-y-2 z-10 mt-16 flex cursor-default flex-col flex-wrap items-center justify-center gap-3 sm:flex-row sm:gap-x-5 lg:mx-10 lg:mt-[70px] xl:mx-[160px] xl:mt-[5dvh] xl:gap-y-0 2xl:mx-[200px] 2xl:gap-y-0">
+            <div className="sm:-gap-y-1 4xl:!mt-20 4xl:!mx-0 4xl:!gap-y-8 3xl:!gap-y-2.5 3xl:!mx-[20px] 1.5xl:!mx-[80px] 1.5xl:!gap-y-2 z-10 mt-16 flex cursor-default flex-col flex-wrap items-center justify-center gap-3 sm:flex-row sm:gap-x-5 lg:mx-10 lg:mt-[70px] xl:mx-[160px] xl:mt-[5dvh] xl:gap-y-0 2xl:mx-[200px] 2xl:gap-y-0">
               {HERO_ARTISTS.map((artist) => (
-                <ArtistBlock key={artist.name}>
-                  {artist.name}
-                  {artist.name === "Zdob și Zdub" && " și Frații Advahov"}
-                </ArtistBlock>
+                <ArtistBlock key={artist.name}>{artist.name}</ArtistBlock>
               ))}
             </div>
 
-            <div className="3xl:!mt-7 4xl:mt-10 mt-2 flex flex-col items-center justify-center">
+            <div className="3xl:!mt-5 4xl:mt-10 mt-2 flex flex-col items-center justify-center">
               <ArtistBlock className="text-go-medium-green">MEGA MIX</ArtistBlock>
-              <p className="text-go-medium-green 3xl:!mt-7 3xl:!text-[20px] 4xl:!mt-10 4xl:text-[25px] mt-1 text-center text-[20px] leading-[1.25] font-[850] tracking-[-0.04em] whitespace-pre-line uppercase 2xl:text-[16px]">
+              <p className="text-go-medium-green 3xl:!mt-3 3xl:!text-[20px] 4xl:!mt-10 4xl:text-[25px] mt-1 text-center text-[20px] leading-[1.25] font-[850] tracking-[-0.04em] whitespace-pre-line uppercase 2xl:text-[16px]">
                 {t("home.hero.megamix_lineup")}
               </p>
             </div>

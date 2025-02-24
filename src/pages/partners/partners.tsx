@@ -23,6 +23,14 @@ const PARTNERS = [
   }
 ];
 
+const INSTITUTIONAL_PARTNERS = [
+  {
+    name: "Moldtelecom",
+    image: "/images/partners/moldtelecom.svg",
+    link: "https://moldtelecom.md"
+  }
+];
+
 const PartnersPage = () => {
   const { t } = useTranslation();
 
@@ -35,62 +43,98 @@ const PartnersPage = () => {
         description={t("meta.partners.description")}
         keywords={t("meta.partners.keywords")}
       />
-      <section className="bg-go-neon-green text-muted-foreground min-h-[calc(90dvh-var(--header-height-mobile))] py-20 lg:min-h-[calc(100dvh-var(--header-height-desktop))] lg:py-24">
-        <div className="container mx-auto px-4">
-          <motion.h1
-            className="4xl:!text-9xl text-center text-5xl leading-tight font-black tracking-[-0.04em] uppercase md:text-6xl lg:text-7xl 2xl:text-8xl"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeUpVariants}
-          >
-            {t("partners.organizer")}
-          </motion.h1>
+      <section className="bg-go-neon-green text-muted-foreground 4xl:pt-[150px] min-h-[calc(90dvh-var(--header-height-mobile))] py-20 lg:min-h-[calc(100dvh-var(--header-height-desktop))] lg:py-24 xl:pt-32 2xl:pt-[120px]">
+        <div className="3xl:max-w-none 3xl:flex 3xl:flex-col 3xl:items-center container mx-auto px-4">
+          <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
+            <motion.h1
+              className="text-center text-4xl leading-tight font-black tracking-[-0.04em] uppercase md:-mt-4"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeUpVariants}
+            >
+              {t("partners.organizer")}
+            </motion.h1>
 
-          <div className="mt-8 flex flex-col items-center justify-center md:flex-row">
             <motion.a
               href={ORGANIZER.link}
               key={ORGANIZER.name}
               target="_blank"
               title={ORGANIZER.name}
               rel="noopener noreferrer"
-              // className={cn({ "4xl:!mx-40 3xl:!mx-32 mt-16 mb-20 md:mx-16 md:my-0 lg:mx-24": i === 1 })}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={fadeUpVariants}
             >
-              <img src={ORGANIZER.image} alt={ORGANIZER.name} className="mx-auto block w-full" />
+              <img src={ORGANIZER.image} alt={ORGANIZER.name} className="mx-auto block w-[160px]" />
             </motion.a>
           </div>
 
-          <motion.h1
-            className="4xl:!text-9xl mt-20 text-center text-5xl leading-tight font-black tracking-[-0.04em] uppercase md:text-6xl lg:text-7xl xl:mt-32 2xl:text-8xl"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeUpVariants}
-          >
-            {t("partners.title")}
-          </motion.h1>
-
-          <div className="mt-8 flex flex-col items-center justify-center gap-10 md:flex-row md:gap-20">
-            {PARTNERS.map((partner) => (
-              <motion.a
-                href={partner.link}
-                key={partner.name}
-                target="_blank"
-                title={partner.name}
-                rel="noopener noreferrer"
-                // className={cn({ "4xl:!mx-40 3xl:!mx-32 mt-16 mb-20 md:mx-16 md:my-0 lg:mx-24": i === 1 })}
+          <div className="3xl:!gap-[120px] 4xl:!gap-[150px] mt-[75px] flex flex-col items-center gap-[60px] 2xl:flex-row">
+            <div className="flex flex-col items-center justify-center gap-9 lg:flex-row">
+              <motion.h1
+                className="text-center text-4xl leading-[1] font-black tracking-[-0.04em] uppercase lg:-mt-5"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true, margin: "-100px" }}
                 variants={fadeUpVariants}
               >
-                <img src={partner.image} alt={partner.name} className="mx-auto block w-full" />
-              </motion.a>
-            ))}
+                {t("partners.general_partners")}
+              </motion.h1>
+              <div className="flex flex-col items-center justify-center gap-9 md:flex-row">
+                {PARTNERS.map((partner, i) => (
+                  <motion.a
+                    href={partner.link}
+                    key={partner.name}
+                    target="_blank"
+                    title={partner.name}
+                    rel="noopener noreferrer"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                    variants={fadeUpVariants}
+                  >
+                    <img
+                      src={partner.image}
+                      alt={partner.name}
+                      className={cn("mx-auto block w-auto", {
+                        "h-[56px]": i === 1,
+                        "h-[48px] md:-mt-9": i === 0
+                      })}
+                    />
+                  </motion.a>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-9 lg:flex-row 2xl:-mt-5">
+              <motion.h1
+                className="text-center text-4xl leading-[1] font-black tracking-[-0.04em] uppercase"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-100px" }}
+                variants={fadeUpVariants}
+              >
+                {t("partners.institutional_partner")}
+              </motion.h1>
+              <div className="flex flex-col items-center justify-center gap-9 md:flex-row">
+                {INSTITUTIONAL_PARTNERS.map((partner) => (
+                  <motion.a
+                    href={partner.link}
+                    key={partner.name}
+                    target="_blank"
+                    title={partner.name}
+                    rel="noopener noreferrer"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                    variants={fadeUpVariants}
+                  >
+                    <img src={partner.image} alt={partner.name} className="mx-auto block w-full md:w-auto" />
+                  </motion.a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

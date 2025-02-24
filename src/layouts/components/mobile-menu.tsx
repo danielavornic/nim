@@ -86,12 +86,12 @@ const MobileMenu = () => {
               <MobileLanguageSwitcher />
 
               <div className="xs:text-[30px] flex flex-col items-center gap-2 text-[26px] font-[950] tracking-[-0.04em]">
-                <a
+                {/* <a
                   href="tel:+37368300694"
                   className="hover:text-muted active:text-muted block underline-offset-4 hover:underline active:underline"
                 >
                   (+373) 068 300 694
-                </a>
+                </a> */}
                 <a
                   href="mailto:contact@nim.md"
                   className="hover:text-muted active:text-muted block underline-offset-8 hover:underline active:underline"

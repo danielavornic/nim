@@ -21,7 +21,9 @@
   },
   "partners": {
     "title": "Партнеры",
-    "organizer": "Организатор"
+    "organizer": "Организатор",
+    "general_partners": "Основные партнеры",
+    "institutional_partner": "Институциональный партнер"
   },
   "rules": {
     "title": "Регламент",

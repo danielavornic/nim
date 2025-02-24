@@ -188,6 +188,20 @@ export const ARTISTS: Artist[] = [
       position: "bottom",
       className: "text-go-blue text-[65px] leading-[50px] ml-10"
     }
+  },
+  {
+    name: "Frații Advahov",
+    displayName: "Frații Advahov",
+    image: "/images/artists/lupii-calancea.png",
+    flag: {
+      direction: "top",
+      className: "fill-accent"
+    },
+    text: {
+      direction: "left",
+      position: "bottom",
+      className: "text-go-blue text-[65px] leading-[50px] ml-10"
+    }
   }
 ];
 
@@ -233,6 +247,7 @@ export const HERO_ARTISTS = [
   ARTISTS[7], // Magnat & Feoctist
   ARTISTS[4], // Satoshi
   ARTISTS[2], // Zdob și Zdub
+  ARTISTS[14], // Frații Advahov
   ARTISTS[9], // Dara
   ARTISTS[12], // Iuliana Beregoi
   ARTISTS[11], // Marej

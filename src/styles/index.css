@@ -255,3 +255,21 @@
   text-fill-color: transparent;
   filter: drop-shadow(0 0 8px rgba(145, 255, 114, 0.5));
 } */
+
+ .tickets-title {
+
+background: linear-gradient(263.27deg, #C9F873 25.33%, #00FBA2 74.82%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+ }
+
+.faq-title {
+background: linear-gradient(272.59deg, #8CFF6D 41.84%, #00FBA2 55.3%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}

@@ -17,13 +17,15 @@
     },
     "about": {
       "title": "About Festival",
-      "description": "Do you love Moldova? You are not alone! You are one of us. \n\n Join us at the only festival at Zimbru Stadium:\n Născut în Moldova – The Festival of Our Music.\n We invite you to sing and celebrate together everything that is ours. \nTo take pride in and cherish everything Born in Moldova. \n\nBe part of our history | June 14-15 | Zimbru Stadium"
+      "description": "Do you love Moldova? You are not alone! You are one of us. \n\n Join us at the only festival at Zimbru Stadium:\n Născut în Moldova – The Festival of Our Music.\n We invite you to sing and celebrate together everything that is ours. To take pride in and cherish everything Born in Moldova. \n\nBe part of our history | June 14-15 | Zimbru Stadium"
     }
   },
   "partners": {
     "title": "Partners",
     "description": "Partners of the Born in Moldova Festival",
-    "organizer": "Organizer"
+    "organizer": "Organizer",
+    "general_partners": "General Partners",
+    "institutional_partner": "Institutional Partner"
   },
   "rules": {
     "title": "Rules",

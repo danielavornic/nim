@@ -16,12 +16,15 @@
     },
     "about": {
       "title": "Despre Festival",
-      "description": "Iubești Moldova? Nu ești singur! Ești de-al Nostru. \n\nHai cu noi la unicul festival de pe Stadionul Zimbru:\n Născut în Moldova, Festivalul Muzicii Noastre. \nTe invităm să cântăm și să ne bucurăm împreună de tot ce e al nostru. Să ne mândrim și să iubim tot ce e Născut în Moldova. \n\nFii parte din istoria noastră | 14-15 Iunie | Stadionul Zimbru"
+      "description": "Iubești Moldova? Nu ești singur! Ești de-al Nostru. \n\nNăscut în Moldova, Festivalul Muzicii Noastre.\nTe invităm să cântăm și să ne bucurăm împreună de tot ce e al nostru. Să ne mândrim și să iubim tot ce e Născut în Moldova.\n\nFii parte din istorie | 14-15 Iunie | Stadionul Zimbru"
     }
   },
   "partners": {
     "title": "Parteneri",
-    "organizer": "Organizator"
+    "description": "Partenerii festivalului Născut în Moldova",
+    "organizer": "Organizator",
+    "general_partners": "Parteneri Generali",
+    "institutional_partner": "Partener Instituțional"
   },
   "rules": {
     "title": "Regulament",
